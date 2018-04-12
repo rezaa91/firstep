@@ -62,7 +62,7 @@ styling for about
 
 
 /*
-stling for projects section
+styling for projects section
 */
 .panel{
     padding:5px;
@@ -71,6 +71,7 @@ stling for projects section
     margin-top:10px;
     margin-bottom:10px;
 }
+
 #projects h6{
     color:black;
     padding:5px;
@@ -81,6 +82,51 @@ stling for projects section
 }
 .panel:hover{
     box-shadow:1px 1px 5px black;
+}
+#featured_projects{
+    margin:0;
+}
+
+
+/*
+Styling for services
+*/
+#services{
+    padding: 20px 20px 50px;
+    background-color:#242526;
+}
+#service-header p{
+    color:white;
+}
+#service-header hr{
+    border-color:white;
+}
+.service-panel{
+    padding:15px;
+}
+.service-panel-body{
+    font-size:14px;
+}
+
+
+/*
+styling for testomonials
+*/
+#testomonials{
+    padding: 20px 20px 50px;
+}
+
+
+/*
+styling for banner
+*/
+#banner{
+    padding:30px;
+    background-image:url('../img/beach.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    margin-bottom: 50px;
 }
 
 
@@ -93,7 +139,68 @@ js style - to apply to navbar background when start to scroll
     background-color:#efefef;
 }
 .brand{
-    color:#1e1e1e !important;
+    color:#5bc0de !important;
+}
+.visibility{
+    visibility: visible;
+}
+
+
+/*
+Stylings for footer
+*/
+/*general default footer*/
+footer ul{
+    list-style:none;
+    padding:0;
+}
+footer a{
+    color:white;
+}
+.footer-text{
+    font-size:14px;
+}
+/*outer footer*/
+#outer-footer{
+    border-top:2px solid black;
+    color:white;
+    background-color:#242526;
+    padding:20px;
+}
+#social_links li{
+    display:inline-block;
+    font-size:22px;
+    background-color:#646466;
+    padding:4px 11px;
+    border-radius:100px;
+}
+#social_links a{
+    color:#242526;
+}
+#social_links a:hover{
+    color:#050505;
+}
+#site-map li{
+    font-size:14px;
+    margin:2px 0px;
+    display:inline-block;
+}
+#site-map a{
+    color:white;
+}
+#footer-logo{
+    font-family:'raleway','sans-serif';
+    font-size:38px;
+}
+
+/*bottom footer*/
+#inner-footer{
+    background-color:#050505;
+    color:white;
+    padding:5px;
+}
+#inner-footer p{
+    font-size:14px;
 }
 
 

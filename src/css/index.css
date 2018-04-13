@@ -1,7 +1,19 @@
-*{
-    font-family:'open sans','sans-serif';
-    box-sizing:border-box;
+/*
+modal & modal-btn
+*/
+#modal-btn{
+    position:fixed;
+    border-radius:100px;
+    z-index:1;
+    bottom:20px;
+    right:10px;
+    font-size:28px;
+    padding:10px 18px;
 }
+#modal-label{
+    font-family:'raleway','sans-serif';
+}
+
 
 /*
 set header default settings
@@ -22,7 +34,7 @@ header{
 }
 #header-content h1{
     font-family:'raleway','sans-serif';
-    font-size:60px;
+    font-size:80px;
     margin-bottom:10px;
 }
 #header-content h4{
@@ -32,17 +44,7 @@ header{
     margin-top:20px;
 }
 
-nav{
-    border-bottom:1px solid #efefef;
-}
-.navbar-brand{
-    color:#efefef !important;
-    font-family:'raleway','sans-serif';
-    font-weight:bold;
-}
-#logo{
-    width:25px;
-}
+
 
 
 /*
@@ -131,7 +133,6 @@ styling for banner
 
 
 
-
 /*
 js style - to apply to navbar background when start to scroll
 */
@@ -146,69 +147,11 @@ js style - to apply to navbar background when start to scroll
 }
 
 
-/*
-Stylings for footer
-*/
-/*general default footer*/
-footer ul{
-    list-style:none;
-    padding:0;
-}
-footer a{
-    color:white;
-}
-.footer-text{
-    font-size:14px;
-}
-/*outer footer*/
-#outer-footer{
-    border-top:2px solid black;
-    color:white;
-    background-color:#242526;
-    padding:20px;
-}
-#social_links li{
-    display:inline-block;
-    font-size:22px;
-    background-color:#646466;
-    padding:4px 11px;
-    border-radius:100px;
-}
-#social_links a{
-    color:#242526;
-}
-#social_links a:hover{
-    color:#050505;
-}
-#site-map li{
-    font-size:14px;
-    margin:2px 0px;
-    display:inline-block;
-}
-#site-map a{
-    color:white;
-}
-#footer-logo{
-    font-family:'raleway','sans-serif';
-    font-size:38px;
-}
-
-/*bottom footer*/
-#inner-footer{
-    background-color:#050505;
-    color:white;
-    padding:5px;
-}
-#inner-footer p{
-    font-size:14px;
-}
-
 
 
 /*
 media queries
 */
-
 @media screen and (max-width:576px){
     /*remove panel title*/
     .panel-title{
@@ -222,14 +165,6 @@ media queries
     /*change about tag font size*/
     #about-tag{
         display:none;
-    }
-    
-    /*give solid background to navbar and adjust navbar header accordingly*/
-    nav{
-        background-color:#efefef;
-    }
-    .navbar-brand{
-        color:#1e1e1e !important;
     }
 }
 

@@ -15,18 +15,20 @@
         <title><?php if(isset($page_title)){echo $page_title;} ?></title>
         
         <!--links to bootstrap and jquery-->
-        <link rel="stylesheet" href="src/css/bootstrap.min.css"/>
-        <script type="text/javascript" src="src/js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="src/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../src/lib/bootstrap.min.css"/>
+        <script type="text/javascript" src="../src/lib/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../src/lib/bootstrap.bundle.min.js"></script>
     
         <!--personal scripts and stylesheets-->
-        <link rel="stylesheet" href="<?php if(isset($css)){echo $css;} ?>" />
-        <script type="text/javascript" src="<?php if(isset($js)){echo $js;} ?>"></script>
+        <link rel="stylesheet" href='../src/css/h_f.css' /><!--header and footer css-->
+        <script type="text/javascript" src="../src/js/h_f.js"></script><!--header and footer js-->
+        <link rel="stylesheet" href="<?php if(isset($css)){echo $css;} ?>" /><!--page css-->
+        <script type="text/javascript" src="<?php if(isset($js)){echo $js;} ?>"></script><!--page js-->
         
         <!--google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
         <!--font-awesome-->
-        <script src="src/js/fontawesome-all.min.js"></script>
+        <script src="../src/lib/fontawesome-all.min.js"></script>
         
     </head><!--end of head-->
     

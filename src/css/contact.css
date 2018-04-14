@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(239,239,239);
+}
+.navbar-brand{
+    color:rgb(23,162,184) !important;
+}
+
+/*
+styling for header
+*/
+#header{
+    height:30vh;
+    margin-top:60px;
+    background-image: url('../img/humber-bridge.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+/*
+styling for contact form
+*/
+#contact{
+    margin-top:30px;
+    margin-bottom:30px;
+    box-shadow:1px 1px 10px black;
+    background-color:white;
+}
+
+label{
+    font-weight:bold;
+}
+
+#form-details{
+    padding:20px;
+}
+
+#contact-details{
+    padding:20px;
+    border-left:2px solid black;
+}

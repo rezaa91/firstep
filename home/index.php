@@ -81,7 +81,7 @@ require_once('../includes/header.html');
                         <h4 class="text-muted">Website Design <i class="fas fa-pencil-alt"></i></h4>
                     </div>
                     <div class="about-desc">
-                        <p>We design your website to meet your goals! Our aim is to make you happy, and we will not stop until you are 100% satisfied with the design.</p>
+                        <p>We design your website to meet your commercial goals! Our aim is to make you happy, and we will not stop until you are 100% satisfied with the design.</p>
                     </div>
                 </div>
             </div><!--end of column 1-->

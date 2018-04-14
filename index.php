@@ -1,4 +1,4 @@
-<!--locate page to homepage-->
+<!--redirect page to homepage-->
 <?php
 header('location: home');
 ?>

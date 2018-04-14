@@ -80,6 +80,34 @@ footer a{
 }
 
 
+/*
+modal & modal-btn
+*/
+#modal-btn{
+    position:fixed;
+    border-radius:100px;
+    z-index:1;
+    bottom:20px;
+    right:10px;
+    font-size:28px;
+    padding:10px 18px;
+}
+#modal-label{
+    font-family:'raleway','sans-serif';
+}
+
+
+/*
+js style - to apply to navbar background when start to scroll
+*/
+.white{
+    background-color:#efefef;
+}
+.brand{
+    color:#5bc0de !important;
+}
+
+
 
 /*
 media queries

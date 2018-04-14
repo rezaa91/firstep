@@ -1,0 +1,63 @@
+/*
+header styling
+*/
+
+#header{
+    height: 50vh;
+}
+#header-text{
+    padding-top:30vh;
+    color:white;
+}
+
+
+/*
+image gallery styling
+*/
+#image-banner{
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color:#242526;
+}
+
+/*
+stling for about about desc
+*/
+#about-desc{
+    padding-top:70px;
+    padding-bottom:70px;
+}
+#about-desc-banner img{
+    border-radius:360px;
+    box-shadow:0px 1px 10px black;
+}
+.about-desc-header{
+    padding:10px 5px;
+}
+.about-desc-body{
+    padding:5px;
+}
+.about-desc-footer{
+    padding:5px;
+    font-size:22px;
+}
+/*
+styling for social media
+*/
+#social-media{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.social{
+    font-size:34px;
+}
+
+/*
+styling for call to action
+*/
+#call-to-action{
+    padding-top:70px;
+    padding-bottom:70px;
+    margin-bottom:0px;
+}
+

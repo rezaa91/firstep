@@ -1,21 +1,4 @@
 /*
-modal & modal-btn
-*/
-#modal-btn{
-    position:fixed;
-    border-radius:100px;
-    z-index:1;
-    bottom:20px;
-    right:10px;
-    font-size:28px;
-    padding:10px 18px;
-}
-#modal-label{
-    font-family:'raleway','sans-serif';
-}
-
-
-/*
 set header default settings
     .position header content
     .style navigation bar
@@ -129,21 +112,6 @@ styling for banner
     background-size:cover;
     background-attachment:fixed;
     margin-bottom: 50px;
-}
-
-
-
-/*
-js style - to apply to navbar background when start to scroll
-*/
-.white{
-    background-color:#efefef;
-}
-.brand{
-    color:#5bc0de !important;
-}
-.visibility{
-    visibility: visible;
 }
 
 

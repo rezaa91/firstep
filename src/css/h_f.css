@@ -10,7 +10,7 @@ default settings
 nav settings
 */
 nav{
-    border-bottom:1px solid #efefef;
+    border-bottom:1px solid rgb(251,253,255);
 }
 .navbar-brand{
     color:#efefef !important;
@@ -39,7 +39,7 @@ footer a{
 /*outer footer*/
 #outer-footer{
     border-top:2px solid black;
-    color:white;
+    color:rgb(251,253,255);
     background-color:#242526;
     padding:20px;
 }
@@ -62,17 +62,20 @@ footer a{
     display:inline-block;
 }
 #site-map a{
-    color:white;
+    color:rgb(251,253,255);
 }
 #footer-logo{
     font-family:'raleway','sans-serif';
     font-size:38px;
+    color:rgb(67,87,163);
 }
-
+.contact-info{
+    color:rgb(67,87,163);
+}
 /*bottom footer*/
 #inner-footer{
     background-color:#050505;
-    color:white;
+    color:rgb(251,253,255);
     padding:5px;
 }
 #inner-footer p{
@@ -91,9 +94,22 @@ modal & modal-btn
     right:10px;
     font-size:28px;
     padding:10px 18px;
+    background-color:rgb(216,73,81);
+    color:rgb(251,253,255);
 }
+.modal-header{
+    background-color:rgb(67,87,163);
+}
+.modal-title{
+    color:rgb(251,253,255);
+}
+
 #modal-label{
     font-family:'raleway','sans-serif';
+}
+#quote-btn{
+    background-color:rgb(216,73,81);
+    color:rgb(251,253,255);
 }
 
 
@@ -101,10 +117,10 @@ modal & modal-btn
 js style - to apply to navbar background when start to scroll
 */
 .white{
-    background-color:#efefef;
+    background-color:rgb(251,253,255);
 }
 .brand{
-    color:#5bc0de !important;
+    color:rgb(67,87,163) !important;
 }
 
 

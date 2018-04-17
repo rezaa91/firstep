@@ -13,18 +13,27 @@ header{
 
 #header-content{
     padding-top:30vh;
-    color:#efefef;
+    color:rgb(251,253,253);
 }
 #header-content h1{
     font-family:'raleway','sans-serif';
     font-size:80px;
     margin-bottom:10px;
+    color:rgb(67,87,163);
 }
 #header-content h4{
     font-style: italic;
 }
 #header-buttons{
     margin-top:20px;
+}
+#projects_btn{
+    background-color:rgb(251,253,255);
+    color:rgb(90,155,210);
+}
+#main_btn{
+    background-color:rgb(216,73,81);
+    color:rgb(251,253,255);
 }
 
 
@@ -41,6 +50,9 @@ styling for about
     font-family:'raleway','sans-serif';
     margin-bottom:30px;
 }
+.about-heading{
+    color:rgb(67,87,163);
+}
 .about-column{
     padding:10px;
 }
@@ -52,7 +64,7 @@ styling for projects section
 .panel{
     padding:5px;
     background-color:#efefef;
-    box-shadow:1px 1px 10px black;
+    box-shadow:1px 1px 5px black;
     margin-top:10px;
     margin-bottom:10px;
 }
@@ -66,10 +78,13 @@ styling for projects section
     text-decoration:none;
 }
 .panel:hover{
-    box-shadow:1px 1px 5px black;
+    box-shadow:1px 1px 3px black;
 }
 #featured_projects{
     margin:0;
+}
+.featured-header{
+    color:rgb(90,155,210);
 }
 
 
@@ -81,7 +96,10 @@ Styling for services
     background-color:#242526;
 }
 #service-header p{
-    color:white;
+    color:rgb(251,253,255);
+}
+#service-header h2{
+    color:rgb(90,155,210);
 }
 #service-header hr{
     border-color:white;
@@ -92,6 +110,12 @@ Styling for services
 .service-panel-body{
     font-size:14px;
 }
+.panel-title{
+    color:rgb(67,87,163);
+}
+.panel-text{
+    color:rgb(251,253,255);
+}
 
 
 /*
@@ -100,6 +124,10 @@ styling for testomonials
 #testomonials{
     padding: 20px 20px 50px;
 }
+#test-header h2{
+    color:rgb(90,155,210);
+}
+
 
 
 /*
@@ -112,6 +140,10 @@ styling for banner
     background-size:cover;
     background-attachment:fixed;
     margin-bottom: 50px;
+}
+#banner-btn{
+    background-color:rgb(216,73,81);
+    color:rgb(251,253,255);
 }
 
 

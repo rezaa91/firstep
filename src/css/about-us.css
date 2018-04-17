@@ -4,10 +4,14 @@ header styling
 
 #header{
     height: 50vh;
+    background-color:rgb(90,155,210);
 }
 #header-text{
     padding-top:30vh;
-    color:white;
+    font-family:'raleway',sans-serif;
+}
+.header-title{
+    color:rgb(251,253,255);
 }
 
 
@@ -17,19 +21,26 @@ image gallery styling
 #image-banner{
     padding-top:40px;
     padding-bottom:40px;
-    background-color:#242526;
+    background-color:rgb(251,253,255);
+}
+#image-banner img{
+    border-radius:10px;
+    box-shadow:0px 1px 5px black;
 }
 
 /*
 stling for about about desc
 */
+.mission-title{
+    color:rgb(67,87,163);
+}
 #about-desc{
     padding-top:70px;
     padding-bottom:70px;
 }
 #about-desc-banner img{
     border-radius:360px;
-    box-shadow:0px 1px 10px black;
+    box-shadow:0px 1px 5px rgb(67,87,163);
 }
 .about-desc-header{
     padding:10px 5px;
@@ -41,6 +52,9 @@ stling for about about desc
     padding:5px;
     font-size:22px;
 }
+.about-desc-footer blockquote{
+    color:rgb(90,155,210);
+}
 /*
 styling for social media
 */
@@ -51,6 +65,12 @@ styling for social media
 .social{
     font-size:34px;
 }
+#social-media a{
+    color:rgb(67,87,163);
+}
+.social-title{
+    color:rgb(90,155,210);
+}
 
 /*
 styling for call to action
@@ -59,5 +79,12 @@ styling for call to action
     padding-top:70px;
     padding-bottom:70px;
     margin-bottom:0px;
+}
+.call-title{
+    color:rgb(90,155,210);
+}
+#call-btn{
+    background-color:rgb(216,73,81);
+    color:rgb(251,253,255);
 }
 

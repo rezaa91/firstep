@@ -22,11 +22,11 @@ require_once('../includes/header.html');
         <div id="header-content" class="container text-center">
             <div id="header-text">
                 <h1 id="main_header">FIRSTEP</h1>
-                <h4><span class="slogan">WE DESIGN.</span> <span class="slogan text-warning">WE DEVELOP.</span></h4>
+                <h4><span class="slogan">WE DESIGN.</span> <span class="slogan">WE DEVELOP.</span></h4>
             </div>
             <div id="header-buttons">
-                <button class="btn btn-light">PROJECTS</button>
-                <button class="btn btn-info" id="main_btn">GET STARTED</button>
+                <button class="btn" id="projects_btn">PROJECTS</button>
+                <button class="btn" id="main_btn">GET STARTED</button>
             </div>
         </div>
         
@@ -40,16 +40,16 @@ require_once('../includes/header.html');
     <!--about section -->
     <div id="about" class="container">
         
-        <h4 id="about-tag" class="text-center text-info">- THE JOURNEY OF A THOUSAND MILES BEGINS WITH A SINGLE STEP -</h4>
+        <h4 id="about-tag" class="text-center text-muted">- THE JOURNEY OF A THOUSAND MILES BEGINS WITH A SINGLE STEP -</h4>
         
         <!--begin row-->
         <div class="row">
             <div class="col-md-4">
                 <div class="about-column">
                     <div class="about-title">
-                        <h4 class="text-muted">Website Design <i class="fas fa-pencil-alt"></i></h4>
+                        <h4 class="about-heading">Website Design <i class="fas fa-pencil-alt"></i></h4>
                     </div>
-                    <div class="about-desc">
+                    <div class="text-muted">
                         <p>We design your website to meet your commercial goals! Our aim is to make you happy, and we will not stop until you are 100% satisfied with the design.</p>
                     </div>
                 </div>
@@ -58,9 +58,9 @@ require_once('../includes/header.html');
             <div class="col-md-4">
                 <div class="about-column">
                     <div class="about-title">
-                        <h4 class="text-muted">Website Development <i class="fas fa-desktop"></i></h4>
+                        <h4 class="about-heading">Website Development <i class="fas fa-desktop"></i></h4>
                     </div>
-                    <div class="about-desc">
+                    <div class="text-muted">
                         <p>Your website will be tailored to meet your exact requirements and commercial goals. It will be fully responsive so that is looks beautiful &amp; sleek on all devices.</p>
                     </div>
                 </div>
@@ -69,9 +69,9 @@ require_once('../includes/header.html');
             <div class="col-md-4">
                 <div class="about-column">
                     <div class="about-title">
-                        <h4 class="text-muted">Maintenance <i class="fas fa-wrench"></i></h4>
+                        <h4 class="about-heading">Maintenance <i class="fas fa-wrench"></i></h4>
                     </div>
-                    <div class="about-desc">
+                    <div class="text-muted">
                         <p>We understand that your website needs changing regularly to stay modern &amp; unique. That's why we include free updates to your website as part of your package.</p>
                     </div>
                 </div>
@@ -84,8 +84,8 @@ require_once('../includes/header.html');
     <!--featured projects-->
     <div class="jumbotron container-fluid" id="featured_projects">
         <div id="projects-header">
-            <h2 class="text-info">FEATURED PROJECTS</h2>
-            <p class="lead">VIEW THE COLLECTION</p>
+            <h2 class="featured-header">FEATURED PROJECTS</h2>
+            <p class="lead text-muted">VIEW THE COLLECTION</p>
             <hr class="my-4"/>
         </div>
         <!--display examples below-->
@@ -130,7 +130,7 @@ require_once('../includes/header.html');
     <div class="container-fluid" id="services">
         
         <div id="service-header">
-            <h2 class="text-info">SERVICES</h2>
+            <h2>SERVICES</h2>
             <p class="lead">WHAT DO WE OFFER?</p>
             <hr class="my-4" />
         </div>
@@ -143,10 +143,10 @@ require_once('../includes/header.html');
                         <img />
                     </div>
                     <div class="service-panel-header">
-                        <h5 class="text-warning">Responsive</h5>
+                        <h5 class="panel-title">Responsive</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="text-white">All our websites are responsive, meaning they look great on all devices, including desktops, laptops, tablets and mobile.</p>
+                        <p class="panel-text">All our websites are responsive, meaning they look great on all devices, including desktops, laptops, tablets and mobile.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -157,10 +157,10 @@ require_once('../includes/header.html');
                         <img />
                     </div>
                     <div class="service-panel-header">
-                        <h5 class="text-warning">Search Engine Optimisation</h5>
+                        <h5 class="panel-title">Search Engine Optimisation</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="text-white">No matter how good your website is, if it is poorly ranked on Google, no one will ever see it. Search Engine Optimisation increases the chances of your website ranking high on search engines so you can be easily found by your customers.</p>
+                        <p class="panel-text">No matter how good your website is, if it is poorly ranked on Google, no one will ever see it. Search Engine Optimisation increases the chances of your website ranking high on search engines so you can be easily found by your customers.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -171,10 +171,10 @@ require_once('../includes/header.html');
                         <img />
                     </div>
                     <div class="service-panel-header">
-                        <h5 class="text-warning">Website Design</h5>
+                        <h5 class="panel-title">Website Design</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="text-white">We design your website with your business and potential customers in mind. Beautiful, simple &amp; intuitive designs means your customers are more likely to stay, and can easily find what they're looking for.</p>
+                        <p class="panel-text">We design your website with your business and potential customers in mind. Beautiful, simple &amp; intuitive designs means your customers are more likely to stay, and can easily find what they're looking for.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -191,10 +191,10 @@ require_once('../includes/header.html');
                         <img />
                     </div>
                     <div class="service-panel-header">
-                        <h5 class="text-warning">Hosting</h5>
+                        <h5 class="panel-title">Hosting</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="text-light">Hosting comes as part of the all-inclusive package. Hosting allows your website to be on the World Wide Web and to be easily accessible by anywhere in the world.</p>
+                        <p class="panel-text">Hosting comes as part of the all-inclusive package. Hosting allows your website to be on the World Wide Web and to be easily accessible by anywhere in the world.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -205,10 +205,10 @@ require_once('../includes/header.html');
                         <img />
                     </div>
                     <div class="service-panel-header">
-                        <h5 class="text-warning">Website Development</h5>
+                        <h5 class="panel-title">Website Development</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="text-light">After designing your website, it is time to get to the nitty gritty and begin programming your website. We follow the design closely and we promise you will not be disappointed with the end product.</p>
+                        <p class="panel-text">After designing your website, it is time to get to the nitty gritty and begin programming your website. We follow the design closely and we promise you will not be disappointed with the end product.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -219,10 +219,10 @@ require_once('../includes/header.html');
                         <img />
                     </div>
                     <div class="service-panel-header">
-                        <h5 class="text-warning">Support</h5>
+                        <h5 class="panel-title">Support</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="text-light">We understand that there are times you need to update your website. Perhaps you have changed address, or you want to write a blog. Luckily for you, we do this all for you. Just simply send us the changes or additions you want and we will complete this for you.</p>
+                        <p class="panel-text">We understand that there are times you need to update your website. Perhaps you have changed address, or you want to write a blog. Luckily for you, we do this all for you. Just simply send us the changes or additions you want and we will complete this for you.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -238,8 +238,8 @@ require_once('../includes/header.html');
     <div class="container-fluid" id="testomonials">
         
         <div id="test-header">
-            <h2 class="text-info">TESTOMONIALS</h2>
-            <p class="lead">WHAT DO OUR CUSTOMERS SAY?</p>
+            <h2>TESTOMONIALS</h2>
+            <p class="lead text-muted">WHAT DO OUR CUSTOMERS SAY?</p>
             <hr class="my-4"/>
         </div>
         
@@ -297,7 +297,7 @@ require_once('../includes/header.html');
         <div class="row">        
             <div class="col-md-4">
                 <h4 class="text-muted">SEEN ENOUGH?</h4>
-                <button class="btn btn-lg btn-info">GET YOUR WEBSITE</button>
+                <button class="btn btn-lg" id="banner-btn">GET YOUR WEBSITE</button>
             </div>
             
         </div><!--end of row-->

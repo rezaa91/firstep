@@ -14,8 +14,12 @@ include_once('../includes/navigation.html');
     <!--modal-->
     <?php include_once('../includes/modal.html'); ?>
    
-    <!--banner-->
-    <div id="header" class="container-fluid"></div><!--end of banner-->
+    <!--header-->
+    <div class="container-fluid" id="header">
+        <div class="container" id="header-text">
+            <h3 class="header-title">Get in touch today.</h3>
+        </div>
+    </div><!--end of header-->
     
     <!--contact form-->
     <div class="container" id="contact">
@@ -44,33 +48,33 @@ include_once('../includes/navigation.html');
                     </div>
                     
                     <div class="form-group">
-                        <input type="submit" name="submit" class="form-control btn btn-info" value="SEND" />
+                        <input type="submit" name="submit" class="form-control btn" id="send-btn" value="SEND" />
                     </div>
                 </form><!--end of form-->
             </div><!--end of form-->
             
             
             <!--contact details-->
-            <div class="col-md-4 bg-primary" id="contact-details">
+            <div class="col-md-4" id="contact-details">
                 <address>
                     <div class="address-control">
-                        <h4 class="address-header"><i class="far fa-clock text-warning"></i> Opening Times</h4>
-                        <p class="lead text-white address-body">Daily, 8am-1900</p>
+                        <h4 class="address-header"><i class="far fa-clock"></i> Opening Times</h4>
+                        <p class="lead address-body text-muted">Daily, 8am-1900</p>
                     </div>
                     
                     <div class="address-control">
-                        <h4 class="address-header"><i class="fas fa-at text-warning"></i> General Enquiries</h4>
-                        <p class="lead text-white address-body">info@firstep.uk</p>
+                        <h4 class="address-header"><i class="fas fa-at"></i> General Enquiries</h4>
+                        <p class="lead address-body text-muted">info@firstep.uk</p>
                     </div>
                     
                     <div class="address-control">
-                        <h4 class="address-header"><i class="fas fa-mobile-alt text-warning"></i> Tel</h4>
-                        <p class="lead text-white address-body">07873903800</p>
+                        <h4 class="address-header"><i class="fas fa-mobile-alt"></i> Tel</h4>
+                        <p class="lead address-body text-muted">07873903800</p>
                     </div>
                     
                     <div class="address-control">
-                        <h4 class="address-header"><i class="fas fa-map-marker text-warning"></i> Where Are We?</h4>
-                        <p class="lead text-white address-body">Kingswood,<br />Kingston Upon Hull,<br />HU7, <br />United Kingdom</p>
+                        <h4 class="address-header"><i class="fas fa-map-marker"></i> Where Are We?</h4>
+                        <p class="lead address-body text-muted">Kingswood,<br />Kingston Upon Hull,<br />HU7, <br />United Kingdom</p>
                     </div>
                 </address>
             </div><!--end of contact details-->

@@ -94,7 +94,7 @@ require_once('../includes/header.html');
                 
                 <!--show examples-->
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 featured_projects">
                         <a href='http://www.thehybridkid.uk' target="_blank" title="www.thehybridkid.uk">
                             <div class="panel text-center">
                                 <div class="panel-title">
@@ -105,7 +105,7 @@ require_once('../includes/header.html');
                         </a>
                     </div><!--end of example 1-->
                     
-                    <div class="col-md-6">
+                    <div class="col-md-6 featured_projects">
                         <a href='http://www.bensonsportsmassagetherapy.co.uk' target="_blank" title="www.bensonsportsmassagetherapy.co.uk">
                             <div class="panel text-center">
                                 <div class="panel-title">
@@ -137,7 +137,7 @@ require_once('../includes/header.html');
         
         <div class="row">
             
-            <div class="col-md-4">
+            <div class="col-md-4 service">
                 <div class="service-panel">
                     <div class="service-panel-img">
                         <img />
@@ -151,7 +151,7 @@ require_once('../includes/header.html');
                 </div>
             </div><!--end of col-->
                 
-            <div class="col-md-4">
+            <div class="col-md-4 service">
                 <div class="service-panel">
                     <div class="service-panel-img">
                         <img />
@@ -165,7 +165,7 @@ require_once('../includes/header.html');
                 </div>
             </div><!--end of col-->
                 
-            <div class="col-md-4">
+            <div class="col-md-4 service">
                 <div class="service-panel">
                     <div class="service-panel-img">
                         <img />
@@ -185,7 +185,7 @@ require_once('../includes/header.html');
         
         <div class="row">
             
-            <div class="col-md-4">
+            <div class="col-md-4 service">
                 <div class="service-panel">
                     <div class="service-panel-img">
                         <img />
@@ -199,7 +199,7 @@ require_once('../includes/header.html');
                 </div>
             </div><!--end of col-->
                 
-            <div class="col-md-4">
+            <div class="col-md-4 service">
                 <div class="service-panel">
                     <div class="service-panel-img">
                         <img />
@@ -213,7 +213,7 @@ require_once('../includes/header.html');
                 </div>
             </div><!--end of col-->
                 
-            <div class="col-md-4">
+            <div class="col-md-4 service">
                 <div class="service-panel">
                     <div class="service-panel-img">
                         <img />

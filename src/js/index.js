@@ -1,14 +1,58 @@
+/*
+Animate
+a class which creates UI animation effects
+*/
+
+class Animate{
+
+    //hide elements
+    hide(el) {
+        $(el).css('opacity','0');
+    }
+    
+    //fade in elements
+    fadeIn(el, ms, ms2){
+        $(el).hide().delay(ms).fadeIn(ms2);
+    }
+    
+    //fade in when in view
+    scroll(el){
+        let screen_height = $(window).height(); //height of screen
+        let activation_offset = 0.5;
+        let pos = $(el).offset().top;
+        let activation_point = pos - (screen_height*activation_offset);
+        $(window).scroll(function() {
+            let y_scroll_pos = window.pageYOffset;
+            let el_in_view = y_scroll_pos > activation_point;
+            if(el_in_view) {
+                $(el).each(function(i) {
+                    $(this).delay(i*400).animate({
+                        opacity:1
+                    },500)
+                })
+            }
+        })
+    }  
+}//end of class
+
+
+//on load
 $(function(){
     
-    let screen_height = $(window).height();//height of screen
-    let activation_offset = 0.5;    
+    //create instance of Animate class to represent DOM
+    let dom = new Animate();
+    
+    //hide elements on startup
+    dom.hide('.about-column'); //hide about columns
+    dom.hide('.slogan'); //hide slogan
+    dom.hide('.card'); //hide testomonials
+    dom.hide('.featured_projects'); //hide featured projecets
+    dom.hide('.service'); //hide services
     
     
-    //header effects - slogan to appear gradually
-    $('#header-content').hide().delay(600).fadeIn(1000); //delay header content on load before fading in
-    $('.slogan').css('opacity','0'); //give slogan 0 opacity to appear after header content faded in
+    //animations////////////////////////////
     
-    //fade in slogan sentences individually after header content faded in
+    //slogan animation on startup
     $('.slogan').each(function(i){
         $(this).delay(1600).delay(i*1000).animate({
             opacity:1,
@@ -16,7 +60,7 @@ $(function(){
         },500);
     })
     
-    //give animation to main btn
+    //'get started' animation on startup
     $('#main_btn').animate({
         padding:50
     },1000,function(){
@@ -26,57 +70,10 @@ $(function(){
     })
     
     
-    
-    
-    
-    
-    
-    //about section effects
-    $('.about-column').css('opacity','0');
-    let about_pos = $('#about').offset().top;
-    let about_activation_point = about_pos - (screen_height * activation_offset);
-    $(window).scroll(function(){
-        let y_scroll_pos = window.pageYOffset;
-        let el_in_view = y_scroll_pos > about_activation_point;
-        
-        if(el_in_view){
-            $('.about-column').each(function(i){
-              $(this).delay(i*400).animate({
-                  opacity:1
-              },500);  
-            })
-        }
-    })
-    
-    
-    
-    
-    
-    //testomonials
-    //card deck not to be visible to user on startup
-    $('.card').css('opacity','0');
-    //get position of div in which to begin fadein of opacity for card-deck
-    let el_position = $('#testomonials').offset().top;
-    let activation_point = el_position - (screen_height * activation_offset);
-    
-    
-    //function which fades in card-deck when scrolled to it
-    $(window).scroll(function(){
-       let y_scroll_pos = window.pageYOffset;
-        
-        let el_in_view = y_scroll_pos > activation_point;
-        
-        if(el_in_view){  
-            $('.card').each(function(i){
-              $(this).delay(i*300).animate({
-                  opacity:1
-              },500);  
-            })
-        }
-    })
-    
-    
-
-    
+    dom.fadeIn('#header-content',600,1000) //fade header in on startup
+    dom.scroll('.about-column'); //show about columns when in view
+    dom.scroll('.card'); //show testomonials when in view
+    dom.scroll('.featured_projects'); //show featured projects when in view
+    dom.scroll('.service'); //show services when in view
     
 })

@@ -43,12 +43,19 @@ $(function() {
     let dom = new Animate();
     
     //hide elements
-    dom.hide('.banner-img'); //hide banner img
+    dom.hide('.who-section'); //hide who we are sections
     dom.hide('.about-section'); //hide 'our mission' section
     
     //animate elements
     dom.fadeIn('.header-title',400,800); //fade main title on startup
-    dom.scroll('.banner-img'); //fade images in on scroll
     dom.scroll('.about-section'); //fade about section in on scroll
+    
+    //fade who we are sections in on startup
+    $('.who-section').each(function(i) {
+        $(this).delay(i*400).animate({
+            opacity:1
+        },600)
+    })
+    
     
 })

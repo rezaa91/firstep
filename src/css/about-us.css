@@ -28,6 +28,25 @@ image gallery styling
     box-shadow:0px 1px 5px black;
 }
 
+
+/*
+who are we sections
+*/
+#who{
+    margin-top:30px;
+}
+
+#who-header{
+    margin-bottom:30px;
+}
+
+.who-title{
+    color:rgb(67,87,163);
+}
+
+
+
+
 /*
 stling for about about desc
 */

@@ -26,34 +26,34 @@ include_once('../includes/navigation.html');
     <!--who are we-->
     <div class="container" id="who">
         
-        <h4 class="text-muted">- WHO WE ARE -</h4>
+        <h4 class="text-muted" id="who-header">WHO ARE WE?</h4>
         
         <div class="row">
             
-            <div class="col-md-4">
+            <div class="col-md-4 who-section">
                 <div class="who-title">
                     <h4>Our Passion</h4>
                 </div>
                 <div class="who-desc">
-                    <p>To help you excel in business</p>
+                    <p class="text-muted">To help you excel in business</p>
                 </div>
             </div><!--end of col 1-->
             
-            <div class="col-md-4">
+            <div class="col-md-4 who-section">
                 <div class="who-title">
                     <h4>Our Goals</h4>
                 </div>
                 <div class="who-desc">
-                    <p>To provide you with a stunning website which will aim to improve your business</p>
+                    <p class="text-muted">To provide you with a stunning website which will aim to improve your business</p>
                 </div>
             </div><!--end of col 2-->
             
-            <div class="col-md-4">
+            <div class="col-md-4 who-section">
                 <div class="who-title">
                     <h4>Our Results</h4>
                 </div>
                 <div class="who-desc">
-                    <p>Stunning websites. Increased traffic. Increased sales.</p>
+                    <p class="text-muted">Stunning websites. Increased traffic. Increased sales.</p>
                 </div>
             </div><!--end of col 3-->
             
@@ -67,16 +67,16 @@ include_once('../includes/navigation.html');
     <!--images-->
     <div class="container-fluid" id="image-banner">
         <div class="row">
-            <div class="col-md-3 banner-img">
+            <div class="col-md-3 who-section">
                 <img class="img-fluid" src="../src/img/firstep-4.jpg" />
             </div><!--end of col 1-->
-            <div class="col-md-3 banner-img">
+            <div class="col-md-3 who-section">
                 <img class="img-fluid" src="../src/img/firstep-3.jpg" />
             </div><!--end of col 2-->
-            <div class="col-md-3 banner-img">
+            <div class="col-md-3 who-section">
                 <img class="img-fluid" src="../src/img/firstep-4.jpg" />
             </div><!--end of col 3-->
-            <div class="col-md-3 banner-img">
+            <div class="col-md-3 who-section">
                 <img class="img-fluid" src="../src/img/firstep-3.jpg" />
             </div><!--end of col 4-->
         </div><!--end of row-->

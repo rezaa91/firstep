@@ -6,11 +6,15 @@ body{
 styling for header
 */
 #header{
-    height: 20vh;
-    background-color:rgb(90,155,210);
+    height: 40vh;
+    background-image: url('../img/humber-bridge1.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
 #header-text{
-    padding-top:12vh;
+    position:relative;
+    top:30vh;
     font-family:'raleway',sans-serif;
 }
 .header-title{
@@ -23,7 +27,6 @@ styling for contact form
 #contact{
     margin-top:30px;
     margin-bottom:30px;
-    box-shadow:1px 1px 10px grey;
     background-color:white;
 }
 

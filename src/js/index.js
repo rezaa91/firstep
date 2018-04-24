@@ -18,7 +18,7 @@ class Animate{
     //fade in when in view
     scroll(el){
         let screen_height = $(window).height(); //height of screen
-        let activation_offset = 0.5;
+        let activation_offset = 0.7;
         let pos = $(el).offset().top;
         let activation_point = pos - (screen_height*activation_offset);
         $(window).scroll(function() {
@@ -75,5 +75,6 @@ $(function(){
     dom.scroll('.card'); //show testomonials when in view
     dom.scroll('.featured_projects'); //show featured projects when in view
     dom.scroll('.service'); //show services when in view
+    
     
 })

@@ -79,22 +79,26 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                 <form role="form" action="" method="post">
                     <div class="form-group">
                         <label for="name">NAME:</label><br />
-                        <input type="text" name="name" class="form-control" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['name'])){echo $_SESSION['name'];} ?>"/>
+                        <input type="text" name="name" class="form-control" id="name" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['name'])){echo $_SESSION['name'];} ?>"/>
+                        <span id="name_error" class="error"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="email">EMAIL:</label><br />
-                        <input type="text" name="email" class="form-control" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['email'])){echo $_SESSION['email'];} ?>" />
+                        <input type="text" name="email" class="form-control" id="email" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['email'])){echo $_SESSION['email'];} ?>" />
+                        <span id="email_error" class="error"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="">TELEPHONE:</label><br />
-                        <input type="text" name="telephone" class="form-control" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['tel'])){echo $_SESSION['tel'];} ?>" />
+                        <input type="text" name="telephone" class="form-control" id="tel" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['tel'])){echo $_SESSION['tel'];} ?>" />
+                        <span id="tel_error" class="error"></span>
                     </div>
                     
                     <div class="form-group">
                         <label for="message">HOW CAN WE HELP?</label><br />
-                        <textarea name="message" class="form-control" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?>><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];} ?></textarea>
+                        <textarea rows="5" name="message" class="form-control" id="msg" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?>><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];} ?></textarea>
+                        <span id="msg_error" class="error"></span>
                     </div>
                     
                     <div class="form-group">

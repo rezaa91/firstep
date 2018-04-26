@@ -24,8 +24,8 @@ require_once 'includes/handle-modal.php';
                 <h4><span class="slogan">WE DESIGN.</span> <span class="slogan">WE DEVELOP.</span></h4>
             </div>
             <div id="header-buttons">
-                <button class="btn" id="projects_btn">PROJECTS</button>
-                <button class="btn" id="main_btn">GET STARTED</button>
+                <a href='#featured_projects' class="btn" id="projects_btn">PROJECTS</a>
+                <a class="btn" id="main_btn">GET STARTED</a>
             </div>
         </div>             
     </header><!--end of header-->

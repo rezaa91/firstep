@@ -32,7 +32,8 @@ class Animate{
                 })
             }
         })
-    }  
+    }
+    
 }//end of class
 
 
@@ -75,6 +76,22 @@ $(function(){
     dom.scroll('.card'); //show testomonials when in view
     dom.scroll('.featured_projects'); //show featured projects when in view
     dom.scroll('.service'); //show services when in view
+    
+    
+    //scroll page to projects when 'projects' btn pressed
+    $('#projects_btn').on('click', function(e) {
+        e.preventDefault(); //prevent btn firing as set to snap to top of div in case client has JS disabled
+        
+        let pos = $('#featured_projects').offset().top; //find top of div position
+        let heightOfNav = document.getElementsByTagName('nav')[0].offsetHeight; //height of navbar
+        let scrollHeight = pos - heightOfNav; //scroll - the top of div position - height of nav to ensure full div in clients view
+        
+        //scroll page to top of div
+        $('body,html').animate({
+            scrollTop: scrollHeight
+        }, 1000);
+        
+    })
     
     
 })

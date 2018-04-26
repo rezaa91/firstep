@@ -52,3 +52,15 @@ label{
 .address-header{
     color:rgb(67,87,163);
 }
+
+textarea{
+    resize:none;
+}
+
+/*style client side form validation messages*/
+.error{
+    color:red;
+    font-style:italic;
+    font-size:15px;
+    display:inline-block;
+}

@@ -64,18 +64,18 @@ require_once 'includes/handle-modal.php';
     
     
     <!--images-->
-    <div class="container-fluid" id="image-banner">
+    <div class="container-fluid who-section" id="image-banner">
         <div class="row">
-            <div class="col-md-3 who-section">
+            <div class="col-md-3">
                 <img class="img-fluid" src="src/img/firstep-4.jpg" />
             </div><!--end of col 1-->
-            <div class="col-md-3 who-section">
+            <div class="col-md-3">
                 <img class="img-fluid" src="src/img/firstep-3.jpg" />
             </div><!--end of col 2-->
-            <div class="col-md-3 who-section">
+            <div class="col-md-3">
                 <img class="img-fluid" src="src/img/firstep-4.jpg" />
             </div><!--end of col 3-->
-            <div class="col-md-3 who-section">
+            <div class="col-md-3">
                 <img class="img-fluid" src="src/img/firstep-3.jpg" />
             </div><!--end of col 4-->
         </div><!--end of row-->

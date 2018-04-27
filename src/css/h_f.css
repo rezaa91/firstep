@@ -147,13 +147,22 @@ js style - to apply to navbar background when start to scroll
 /*
 media queries
 */
-@media screen and (max-width:576px){    
+@media screen and (max-width:768px){    
     /*give solid background to navbar and adjust navbar header accordingly*/
     nav{
         background-color:#efefef;
     }
     .navbar-brand{
         color:#1e1e1e !important;
+    }
+    .contact-info{
+        font-size:13px;
+    }
+    .footer-text{
+        font-size:13px;
+    }
+    #inner-footer{
+        display:none;
     }
 }
 

@@ -64,3 +64,27 @@ textarea{
     font-size:15px;
     display:inline-block;
 }
+
+
+
+/*
+make responsive - media queries
+*/
+@media screen and (max-width: 768px){
+    #contact{
+        min-width:100%;
+    }
+    
+    #contact-details{
+        border-left:none;
+        text-align:Center;
+    }
+    #contact{
+        margin:0;
+    }
+    .form-group{
+        margin-bottom:2px;
+    }
+}
+
+

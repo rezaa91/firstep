@@ -1,5 +1,5 @@
 $(function(){
-    
+
     //fade title in on load
     $('.header-title').hide().delay(500).fadeIn(600);
     
@@ -18,11 +18,21 @@ $(function(){
         }
         
         validateEmail(email){
-            //need regExp for email address
+            let email_pattern = /^[a-zA-Z0-9._-]+@+[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if(email_pattern.test(email.value)){
+                return true;
+            }else{
+                return false;
+            }
         }
         
         validateTel(num){
-            //need regExp for tel number
+            let tel_pattern = /^\d+$/;
+            if(tel_pattern.test(num.value)){
+                return true;
+            }else{
+                return false;
+            }
         }
         
     }//end of validation class
@@ -65,8 +75,9 @@ $(function(){
     
     //add event listeners on key up to input forms - set outcomes to the result of validation
     //inform user if mistake made
-    /*user validateStr method for all at the moment until other methods correctly configured*/
-    name.addEventListener('keyup', function() {
+    
+    //FUNCTIONS TO USE WITH EVENT LISTENERS
+    function validate_name(){
         name_outcome = validate.validateStr(name); //bool
         
         if(!name_outcome){ //if incorrect data - inform user
@@ -75,11 +86,10 @@ $(function(){
             $('#name_error').text('');
         }
         checkForm();
-    })
+    }
     
-    
-    email.addEventListener('keyup', function(){
-        email_outcome = validate.validateStr(email); //bool
+    function validate_email(){
+        email_outcome = validate.validateEmail(email); //bool
         
         if(!email_outcome){ //if incorrect data - inform user
             $('#email_error').text('* please enter a valid email address');
@@ -87,11 +97,10 @@ $(function(){
             $('#email_error').text('');
         }
         checkForm();
-    })
+    }
     
-    
-    tel.addEventListener('keyup', function() {
-        tel_outcome = validate.validateStr(tel); //bool
+    function validate_tel(){
+        tel_outcome = validate.validateTel(tel); //bool
         
         if(!tel_outcome){ //if incorrect data - inform user
             $('#tel_error').text('* please enter a valid telephone number');
@@ -99,10 +108,9 @@ $(function(){
             $('#tel_error').text('');
         }
         checkForm();
-    })
+    }
     
-    
-    msg.addEventListener('keyup', function() {
+    function validate_msg(){
         msg_outcome = validate.validateStr(msg); //bool
         
         if(!msg_outcome){ //if incorrect data - inform user
@@ -112,7 +120,27 @@ $(function(){
         }
         
         checkForm();
-    })
+    }
+    
+    //EVENT LISTENERS
+    name.addEventListener('keyup', validate_name);
+    name.addEventListener('focus', validate_name);  
+    name.addEventListener('blur', validate_name);
+    
+    
+    email.addEventListener('keyup', validate_email);
+    email.addEventListener('focus', validate_email);
+    email.addEventListener('blur', validate_email);
+    
+    
+    tel.addEventListener('keyup', validate_tel);
+    tel.addEventListener('focus', validate_tel);
+    tel.addEventListener('blur', validate_tel);
+    
+    
+    msg.addEventListener('keyup', validate_msg);
+    msg.addEventListener('focus', validate_msg);
+    msg.addEventListener('blur', validate_msg);
     
 
 })

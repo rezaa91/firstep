@@ -16,7 +16,7 @@ require_once 'includes/handle-modal.php';
     <!--header-->
     <div class="container-fluid" id="header">
         <div class="container" id="header-text">
-            <h3 class="header-title">"Our mission is to create wonderful websites,<br />structured towards your business."</h3>
+            <h3 class="header-title">"Our mission is to create wonderful websites,<br />tailored towards your business."</h3>
         </div>
     </div><!--end of header-->
     
@@ -31,28 +31,28 @@ require_once 'includes/handle-modal.php';
             
             <div class="col-md-4 who-section">
                 <div class="who-title">
-                    <h4>Our Passion</h4>
+                    <h4>Our Passion <i class="far fa-smile"></i></h4>
                 </div>
                 <div class="who-desc">
-                    <p class="text-muted">To help you excel in business</p>
+                    <p class="text-muted">We love creating websites! There is something special about taking an idea, or a design, and programming that idea in to a fully functioning, beautiful website.</p>
                 </div>
             </div><!--end of col 1-->
             
             <div class="col-md-4 who-section">
                 <div class="who-title">
-                    <h4>Our Goals</h4>
+                    <h4>Our Goals <i class="fas fa-clipboard-list"></i></h4>
                 </div>
                 <div class="who-desc">
-                    <p class="text-muted">To provide you with a stunning website which will aim to improve your business</p>
+                    <p class="text-muted">We thrive for customer satisfaction, and that is our primary goal we set out to achieve. Until this goal is met, we will not stop working! We hope that if you are fully satisfied with the service you received, you are more likely to recommend more custom our way if the opportunity presents itself.</p>
                 </div>
             </div><!--end of col 2-->
             
             <div class="col-md-4 who-section">
                 <div class="who-title">
-                    <h4>Our Results</h4>
+                    <h4>Our Results <i class="fas fa-vials"></i></h4>
                 </div>
                 <div class="who-desc">
-                    <p class="text-muted">Stunning websites. Increased traffic. Increased sales.</p>
+                    <p class="text-muted">Our current clients have reported an increase in traffic &amp; sales, which have aided to their financial goals. So far we have achieved a 100% satisfaction score from our clients which we hope will continue as we move forward.</p>
                 </div>
             </div><!--end of col 3-->
             
@@ -93,11 +93,11 @@ require_once 'includes/handle-modal.php';
                     <h4 class="mission-title"><b>OUR MISSION</b></h4>
                 </div>
                 <div class="about-desc-body about-section">
-                    <p class="lead text-muted">"Here at <span class="mission-title">FIRSTEP</span>, our mission is to create websites fit for purpose. We don't believe in a 'one size fits all' approach which is why we build all our websites from scratch. This means that we do not follow a template-styled theme like a lot of websites out there. Our templates are created with you in mind, this allows us freedom to create whatever you want. The options are limitless!"</p>
+                    <p class="lead text-muted">"Here at <span class="mission-title">FIRSTEP</span>, our mission is to create websites fit for purpose. We don't believe in a 'one size fits all' approach, which is why we build all our websites from scratch. This means that we do not follow a template-styled theme like a lot of websites out there. Our templates are created with you in mind, this allows us freedom to create whatever you want. The options are limitless!"</p>
                     <p class="text-info"></p>
                 </div>
                 <div class="about-desc-footer about-section">
-                    <blockquote class="text-right">- Ali Issaee, <small>Managing Director</small></blockquote>
+                    <blockquote class="text-right">- Ali Issaee, <small>Proprietor</small></blockquote>
                 </div>
             </div><!--end of col 2-->
         </div><!--end of row-->
@@ -123,7 +123,7 @@ require_once 'includes/handle-modal.php';
     <div class="container-fluid jumbotron" id="call-to-action">
         <div class="text-center">
             <h4 class="call-title">GET THE BALL ROLLING...</h4>
-            <p class="lead text-muted">Simply fill in a short form and we will be in touch, it's as simple as that.</p>
+            <p class="lead text-muted contact-desc">Simply fill in a short form and we will be in touch, it's as simple as that.</p>
             <a href='contact.php' class="btn btn-lg" id="call-btn">Contact Us</a> 
         </div>
     </div><!--end of call to action-->

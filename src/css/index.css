@@ -23,7 +23,9 @@ header{
 }
 #header-content h4{
     font-style: italic;
+    font-size:28px;
 }
+
 #header-buttons{
     margin-top:20px;
 }
@@ -152,9 +154,31 @@ styling for banner
 /*
 media queries
 */
-@media screen and (max-width:576px){
-    /*remove panel title*/
-    .panel-title{
+@media screen and (max-width:768px){
+    header{
+        background-image: url('../img/walkout-sm.jpg');
+    }
+    
+    #header-content h1{
+        font-size:60px;
+    }
+    #header-content h4{
+        font-size:20px;
+    }
+    
+    #about-tag{
+        font-size:18px;
+    }
+    
+    .service-panel{
+        text-align:center;
+    }
+    
+    .hide-card{
+        display:none;
+    }
+    
+    #banner{
         display:none;
     }
     
@@ -162,11 +186,11 @@ media queries
     .about-column{
         text-align:center;
     }
-    /*change about tag font size*/
-    #about-tag{
+}
+
+@media screen and (max-width:992px){
+    .featured-project-title{
         display:none;
     }
 }
-
-
 

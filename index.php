@@ -56,7 +56,7 @@ require_once 'includes/handle-modal.php';
                         <h4 class="about-heading">Website Development <i class="fas fa-desktop"></i></h4>
                     </div>
                     <div class="text-muted">
-                        <p>Your website will be tailored to meet your exact requirements and commercial goals. It will be fully responsive so that is looks beautiful &amp; sleek on all devices.</p>
+                        <p>Your website will be tailored to meet your exact requirements. It will be fully responsive so that is looks beautiful &amp; sleek on all devices.</p>
                     </div>
                 </div>
             </div><!--end of column 2-->
@@ -92,7 +92,7 @@ require_once 'includes/handle-modal.php';
                     <div class="col-md-6 featured_projects">
                         <a href='http://www.thehybridkid.uk' target="_blank" title="www.thehybridkid.uk">
                             <div class="panel text-center">
-                                <div class="panel-title">
+                                <div class="featured-project-title">
                                     <h6 class="text-muted">THE HYBRID KID</h6>
                                 </div>
                                 <img src="src/img/hybrid.jpg" class="img-fluid"/>
@@ -103,7 +103,7 @@ require_once 'includes/handle-modal.php';
                     <div class="col-md-6 featured_projects">
                         <a href='http://www.bensonsportsmassagetherapy.co.uk' target="_blank" title="www.bensonsportsmassagetherapy.co.uk">
                             <div class="panel text-center">
-                                <div class="panel-title">
+                                <div class="featured-project-title">
                                     <h6 class="text-muted">CALLUM BENSON'S SPORTS MASSAGE THERAPY CLINIC</h6>
                                 </div>
                                 <img src="src/img/massage.jpg" class="img-fluid" />
@@ -169,7 +169,7 @@ require_once 'includes/handle-modal.php';
                         <h5 class="panel-title">Website Design</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="panel-text">We design your website with your business and potential customers in mind. Beautiful, simple &amp; intuitive designs means your customers are more likely to stay, and can easily find what they're looking for.</p>
+                        <p class="panel-text">We design your website with your business and customers in mind. Beautiful, simple &amp; intuitive designs means your customers are more likely to stay, and can easily find what they're looking for.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -189,7 +189,7 @@ require_once 'includes/handle-modal.php';
                         <h5 class="panel-title">Hosting</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="panel-text">Hosting comes as part of the all-inclusive package. Hosting allows your website to be on the World Wide Web and to be easily accessible by anywhere in the world.</p>
+                        <p class="panel-text">Hosting allows your website to be on the World Wide Web and to be easily accessible anywhere in the world. We sort this out for you.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -203,7 +203,7 @@ require_once 'includes/handle-modal.php';
                         <h5 class="panel-title">Website Development</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="panel-text">After designing your website, it is time to get to the nitty gritty and begin programming your website. We follow the design closely and we promise you will not be disappointed with the end product.</p>
+                        <p class="panel-text">After designing your website, it is time to get to the nitty gritty and begin programming your website. During this phase, you can sit back, relax and await your spanking new website.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -217,7 +217,7 @@ require_once 'includes/handle-modal.php';
                         <h5 class="panel-title">Support</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="panel-text">We understand that there are times you need to update your website. Perhaps you have changed address, or you want to write a blog. Luckily for you, we do this all for you. Just simply send us the changes or additions you want and we will complete this for you.</p>
+                        <p class="panel-text">We understand that there are times you need to update your website. Perhaps you have changed address, or you want to write/update a blog. Luckily for you, we do this all for you. Just simply send us the changes or additions you want and we will complete this for you.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -261,7 +261,7 @@ require_once 'includes/handle-modal.php';
                 </div>
             </div><!--end of card 2-->
             
-            <div class="card">
+            <div class="card hide-card">
                 <img class="card-img-top card-img" src="src/img/placeholder.png" />
                 <div class="card-body">
                     <p class="card-text"><!--enter text here--></p>
@@ -271,7 +271,7 @@ require_once 'includes/handle-modal.php';
                 </div>
             </div><!--end of card 3-->
             
-            <div class="card">
+            <div class="card hide-card">
                 <img class="card-img-top card-img" src="src/img/placeholder.png" />
                 <div class="card-body">
                     <p class="card-text"><!--enter text here--></p>

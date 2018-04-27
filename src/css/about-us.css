@@ -13,6 +13,9 @@ header styling
 .header-title{
     color:rgb(251,253,255);
 }
+.header-sm-title{
+    display:none;
+}
 
 
 /*
@@ -47,7 +50,7 @@ who are we sections
 
 
 /*
-stling for about about desc
+styling for about about desc
 */
 .mission-title{
     color:rgb(67,87,163);
@@ -103,5 +106,49 @@ styling for call to action
 #call-btn{
     background-color:rgb(216,73,81);
     color:rgb(251,253,255);
+}
+
+
+/*
+Make responsive
+*/
+
+@media screen and (max-width:768px){
+    #header{
+        display:none;
+    }
+    
+    #image-banner{
+        display:none;
+    }
+    #who{
+        text-align:center;
+        padding-bottom:20px;
+        background-color:rgb(90,155,210);
+    }
+    .who-section{
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+    .who-desc p{
+        color:rgb(251,253,255) !important;
+    }
+    
+    #about-desc{
+        text-align:center;
+    }
+    
+    #about-desc-banner img{
+        border-radius:10px;
+        margin-bottom:10px;
+    }
+    
+    .contact-desc{
+        display:none;
+    }
+    
+    #call-btn{
+        margin-top:10px;
+    }
 }
 

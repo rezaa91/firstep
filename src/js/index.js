@@ -56,8 +56,7 @@ $(function(){
     //slogan animation on startup
     $('.slogan').each(function(i){
         $(this).delay(1600).delay(i*1000).animate({
-            opacity:1,
-            fontSize:28
+            opacity:1
         },500);
     })
     

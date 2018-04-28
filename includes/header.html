@@ -13,6 +13,7 @@
         
         <!--page title-->
         <title><?php if(isset($page_title)){echo $page_title;} ?></title>
+        <link rel="shortcut icon" href="src/img/logo-title.png" />
         
         <!--links to bootstrap and jquery-->
         <link rel="stylesheet" href="src/lib/bootstrap.min.css"/>
@@ -24,7 +25,7 @@
         <script type="text/javascript" src="src/js/h_f.js"></script><!--header and footer js-->
         <link rel="stylesheet" href="<?php if(isset($css)){echo $css;} ?>" /><!--page css-->
         <script type="text/javascript" src="<?php if(isset($js)){echo $js;} ?>"></script><!--page js-->
-        <script type="text/javascript" src="src/js/modal.js"></script><!--modal js-->
+        <?php if( (isset($modal)) && ($modal == true) ){echo '<script type="text/javascript" src="src/js/modal.js"></script>' ;} ?><!--modal js-->
         
         <!--google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">

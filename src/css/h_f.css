@@ -98,6 +98,11 @@ modal & modal-btn
     background-color:rgb(216,73,81);
     color:rgb(251,253,255);
 }
+
+#modal-btn:hover{
+    opacity:0.9;
+}
+
 .modal-header{
     background-color:rgb(67,87,163);
 }

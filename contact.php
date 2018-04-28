@@ -106,7 +106,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     </div>
                     
                     <div class="form-group">
-                        <?php if(isset($_SESSION['modal'])){ echo '<span>Did you input incorrect details? <a href="mailto:info@firstep.uk">send us an email</a> to rectify this';} ?>
+                        <?php if(isset($_SESSION['modal'])){ echo '<span class="text-muted">Did you input incorrect details? <a href="mailto:info@firstep.uk">send us an email</a> to rectify this';} ?>
                     </div>
                 </form><!--end of form-->
             </div><!--end of row-->

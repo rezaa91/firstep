@@ -2,6 +2,7 @@ body{
     background-color:rgb(239,239,239);
 }
 
+
 /*
 styling for header
 */
@@ -59,7 +60,7 @@ textarea{
 
 /*style client side form validation messages*/
 .error{
-    color:red;
+    color:rgb(261,73,81);
     font-style:italic;
     font-size:15px;
     display:inline-block;

@@ -93,4 +93,21 @@ $(function(){
     })
     
     
+    //scroll page to 'get started' when btn pressed
+    $('#main_btn').on('click', function(e){
+        e.preventDefault(); //prevent btn firing
+        
+        let pos = $('#get-started').offset().top; //find top of div position
+        let heightOfNav = document.getElementsByTagName('nav')[0].offsetHeight; //height of navbar
+        let scrollHeight = pos - heightOfNav; //find the top of div position minus the nav bar to avoid nav blocking some content
+        
+        //scrol page in to view
+        $('body,html').animate({
+            scrollTop:scrollHeight
+        },1000);
+    })
+    
+    
+    
+    
 })

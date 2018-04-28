@@ -29,6 +29,11 @@ header{
 #header-buttons{
     margin-top:20px;
 }
+
+#header-buttons a:hover{
+    opacity:0.9;
+}
+
 #projects_btn{
     background-color:rgb(251,253,255);
     color:rgb(90,155,210);
@@ -65,14 +70,11 @@ styling for projects section
 */
 .panel{
     padding:5px;
-    background-color:#efefef;
-    box-shadow:1px 1px 5px black;
     margin-top:10px;
     margin-bottom:10px;
 }
 
 #projects h6{
-    color:black;
     padding:5px;
     font-weight:bold;
 }
@@ -85,6 +87,7 @@ styling for projects section
 #featured_projects{
     margin:0;
 }
+
 .featured-header{
     color:rgb(90,155,210);
 }
@@ -132,20 +135,33 @@ styling for testomonials
 
 
 
+
 /*
-styling for banner
+styling for 'get started' section
 */
-#banner{
-    padding:30px;
-    background-image:url('../img/beach.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    margin-bottom: 50px;
+#get-started{
+    background-color:rgb(90,155,210);
+    padding-top:50px;
+    padding-bottom:50px;
 }
-#banner-btn{
-    background-color:rgb(216,73,81);
+#get-started-header h1{
+    color:rgb(216,73,81);
+    text-align:center;
+}
+#get-started-body{
+    text-align: center;
     color:rgb(251,253,255);
+}
+#get-started-body h3{
+    color:rgb(67,87,163);
+}
+
+#get-started-body a{
+    background-color:rgb(261,73,81);
+    color:rgb(251,253,255);
+}
+#get-started-body a:hover{
+    opacity:0.9;
 }
 
 
@@ -178,10 +194,6 @@ media queries
         display:none;
     }
     
-    #banner{
-        display:none;
-    }
-    
     /*align about columns central*/
     .about-column{
         text-align:center;
@@ -194,3 +206,11 @@ media queries
     }
 }
 
+@media screen and (min-width: 992px){
+    #header-content h1{
+        font-size:120px;
+    }
+    #header-content h4{
+        font-size:40px;
+    }
+}

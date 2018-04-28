@@ -3,6 +3,7 @@
 $page_title = "FIRSTEP";
 $js = "src/js/index.js";
 $css = "src/css/index.css";
+$modal = true;
 
 require_once 'core/init.php';
 require_once 'includes/handle-modal.php';
@@ -25,7 +26,7 @@ require_once 'includes/handle-modal.php';
             </div>
             <div id="header-buttons">
                 <a href='#featured_projects' class="btn" id="projects_btn">PROJECTS</a>
-                <a class="btn" id="main_btn">GET STARTED</a>
+                <a class="btn" id="main_btn" href='#get-started'>GET STARTED</a>
             </div>
         </div>             
     </header><!--end of header-->
@@ -253,7 +254,7 @@ require_once 'includes/handle-modal.php';
             <div class="card">
                 <img class="card-img-top card-img" src="src/img/afi.jpg" />
                 <div class="card-body">
-                    <p class="card-text">"After showing the team at Firstep my music, and explaining my vision, Firstep was able to captivate and manifest the end product I needed to communicate with my fans.</p>
+                    <p class="card-text">"After showing Firstep my music, and explaining my vision, Firstep was able to captivate and manifest the end product I needed to communicate with my fans.</p>
                     <p class="card-text">The quality of the website was beyond my expectations and I would highly recommend to anyone looking for a creative, and interactive website."</p>
                 </div>
                 <div class="card-footer text-center">
@@ -286,18 +287,24 @@ require_once 'includes/handle-modal.php';
     
     
     
-    <!--banner section-->
-    <div id="banner" class="container">
+    <!--GET STARTED-->
+    <div class="container-fluid" id="get-started">
+       
+       <div id="get-started-header">
+           <h1>GET STARTED</h1>
+           <hr class="my-4"/>
+       </div>
+       
+       <div id="get-started-body">
+           <h3>What do I need to do?</h3>
+           <p class="lead">Simply go to our contact page and fill out a short form. We will then contact you to discuss the finer details. It's as simple as that.</p>
+           <p>What are you waiting for? Click below...</p>
+           <a class="btn btn-lg btn-info" href='contact.php'>GET YOUR WEBSITE</a>
+       </div>
         
-        <div class="row">        
-            <div class="col-md-4">
-                <h4 class="text-muted">SEEN ENOUGH?</h4>
-                <button class="btn btn-lg" id="banner-btn">GET YOUR WEBSITE</button>
-            </div>
-            
-        </div><!--end of row-->
-        
-    </div><!--end of banner-->
+    </div>
+    
+    
     
     
 

@@ -43,12 +43,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $to = 'info@firstep.uk';
         $subject = 'Contact form submission';
         $body = '<p><b>' .$name .'</b><br /><i>' .$tel.'</i></p>';
-        $body .= wordwrap($msg, 70);
-        $headers = "MIME-Version:1.0" ."\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= "From: <$email>" . "\r\n";    
-        
-        mail($to, $subject, $body, $headers); //send
+        $body .= wordwrap($msg, 70); 
+        //$from = $email;
+        $from = 'info@firstep.uk';
+
+        //PHP mailer methods
+        $mail->setFrom($from);
+        $mail->isHTML(true);                                  
+        $mail->Subject = $subject;
+        $mail->Body = $body;
+        $mail->AltBody = strip_tags($body);
+        $mail->send();
         
         
         

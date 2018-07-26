@@ -43,7 +43,7 @@ try {
     $mail->Username = 'fe9884b4bcaf9c';                 // SMTP username
     $mail->Password = '9a7269bd98a964';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 2525;                                    // TCP port to connect to
+    $mail->Port = 25;                                    // TCP port to connect to
 
     //Recipients
     $mail->setFrom('info@firstep.uk', 'Mailer');

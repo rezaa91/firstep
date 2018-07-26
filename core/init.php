@@ -45,8 +45,8 @@ try {
     $mail->Port = 2525;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('info@firstep.uk', 'Mailer');
-    $mail->addAddress('info@firstep.uk', 'Joe User');     // Add a recipient
+    $mail->setFrom('34aa48a872-bd2d26@inbox.mailtrap.io', 'Mailer');
+    $mail->addAddress('34aa48a872-bd2d26@inbox.mailtrap.io', 'Joe User');     // Add a recipient
    
 
     //Content

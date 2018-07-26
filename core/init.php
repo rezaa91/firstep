@@ -25,7 +25,7 @@ ini_set('display_errors', 1);
 
 
 //Email settings
-/ Import PHPMailer classes into the global namespace
+// Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;

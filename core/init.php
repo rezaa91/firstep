@@ -41,7 +41,7 @@ try {
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = ' fe9884b4bcaf9c';                 // SMTP username
     $mail->Password = ' 9a7269bd98a964';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
     //Recipients

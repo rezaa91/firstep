@@ -36,7 +36,7 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
-    $mail->isSMTP();                                      // Set mailer to use SMTP
+    //$mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.mailtrap.io';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'fe9884b4bcaf9c';                 // SMTP username

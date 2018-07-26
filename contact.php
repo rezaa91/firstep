@@ -47,13 +47,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         //$from = $email;
         $from = 'info@firstep.uk';
 
-        //PHP mailer methods
-        $mail->setFrom($from);
-        $mail->isHTML(true);                                  
-        $mail->Subject = $subject;
-        $mail->Body = $body;
-        $mail->AltBody = strip_tags($body);
-        $mail->send();
+        
         
         
         

@@ -44,11 +44,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $subject = 'Contact form submission';
         $body = '<p><b>' .$name .'</b><br /><i>' .$tel.'</i></p>';
         $body .= wordwrap($msg, 70); 
-        //$from = $email;
-        $from = 'info@firstep.uk';
+        $from = $email;
 
-        
-        
+        $mail->setFrom('info@firstep.uk');
+        //Content
+        $mail->isHTML(true);                                  // Set email format to HTML
+        $mail->Subject = $subject;
+        $mail->Body    = $body;
+        $mail->AltBody = strip_tags($body);
+
+        $mail->send();        
         
         
     }catch(Exception $e){ //display errors, if applicable

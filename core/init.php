@@ -25,29 +25,30 @@ ini_set('display_errors', 1);
 
 
 //Email settings
+/ Import PHPMailer classes into the global namespace
+// These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+//Load Composer's autoloader
 require 'vendor/autoload.php';
 
-
-$mail = new PHPMailer(true);
-
+$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
-    $mail->SMTPDebug = 1;                                 // Enable verbose debug output
+    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'mailtrap.io';  // Specify main and backup SMTP servers
+    $mail->Host = 'smtp.mailtrap.io';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = ' fe9884b4bcaf9c';                 // SMTP username
-    $mail->Password = ' 9a7269bd98a964';                           // SMTP password
-    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Username = 'fe9884b4bcaf9c';                 // SMTP username
+    $mail->Password = '9a7269bd98a964';                           // SMTP password
+    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 2525;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('34aa48a872-bd2d26@inbox.mailtrap.io', 'Mailer');
-    $mail->addAddress('34aa48a872-bd2d26@inbox.mailtrap.io', 'Joe User');     // Add a recipient
-   
+    $mail->setFrom('info@firstep.uk', 'Mailer');
+    $mail->addAddress('info@firstep.uk', 'Joe User');     // Add a recipient
+
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML

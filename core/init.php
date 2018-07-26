@@ -36,7 +36,7 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    $mail->SMTPDebug = 1;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.mailtrap.io';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -46,8 +46,8 @@ try {
     $mail->Port = 25;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('info@firstep.uk', 'Mailer');
-    $mail->addAddress('info@firstep.uk', 'Joe User');     // Add a recipient
+    $mail->setFrom('info@firstep.uk');
+    $mail->addAddress('rezaa91@hotmail.co.uk');     // Add a recipient
 
 
     //Content

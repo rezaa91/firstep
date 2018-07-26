@@ -46,7 +46,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $body .= wordwrap($msg, 70); 
         $from = $email;
 
-        $mail->setFrom('info@firstep.uk');
+        $mail->setFrom($email);
         //Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = $subject;

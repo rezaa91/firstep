@@ -21,7 +21,7 @@ spl_autoload_register('class_loader');
 
 
 //display errors
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 
 //Email settings
@@ -36,7 +36,6 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
-    $mail->SMTPDebug = 1;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.mailtrap.io';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication

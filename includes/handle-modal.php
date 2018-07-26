@@ -31,11 +31,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){ //if form submitted, or previously sub
         $subject = 'Contact form submission';
         $body = '<p><b>' .$name .'</b><br /><i>'.$tel.'</i></p>';
         $body .= wordwrap($msg,70);
-        $headers = "MIME-Version:1.0" ."\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= "From: <$email>" . "\r\n"; 
+        
+        $mail->setFrom($email);
+        //Content
+        $mail->isHTML(true);                                  // Set email format to HTML
+        $mail->Subject = $subject;
+        $mail->Body    = $body;
+        $mail->AltBody = strip_tags($body);
 
-        mail($to, $subject, $body, $headers); //send email
+        $mail->send();        
+
         
     }catch(Exception $e){
         require_once 'includes/modal.html';    

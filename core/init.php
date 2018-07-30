@@ -21,7 +21,7 @@ spl_autoload_register('class_loader');
 
 
 //display errors
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 
 
 //Email settings
@@ -52,20 +52,23 @@ try {
 
 
 //outgoing emails
-$outgoing = new PHPMailer(true);                              // Passing `true` enables exceptions
+$outgoing = new PHPMailer;                              // Passing `true` enables exceptions
 try {
     //Server settings
     $outgoing->isSMTP();                                      // Set mailer to use SMTP
-    $outgoing->Host = 'imap.1and1.co.uk';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'info@firstep.uk';                 // SMTP username
-    $mail->Password = 'Issaee50!';                           // SMTP password
-    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 993;                                    // TCP port to connect to
+    $outgoing->Host = 'auth.smtp.1and1.co.uk';  // Specify main and backup SMTP servers
+    $outgoing->SMTPAuth = true;                               // Enable SMTP authentication
+    $outgoing->Username = 'info@firstep.uk';                 // SMTP username
+    $outgoing->Password = 'Issaee50!';                           // SMTP password
+    $outgoing->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    $outgoing->Port = 587;                                    // TCP port to connect to
+
+    $outgoing->From = 'info@firstep.uk';
+    $outgoing->FromName = 'Firstep';
 
 
 } catch (Exception $e) {
-    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+    echo 'Message could not be sent. Mailer Error: ', $outgoing->ErrorInfo;
 }
 
 

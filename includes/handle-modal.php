@@ -33,13 +33,31 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){ //if form submitted, or previously sub
         $body .= wordwrap($msg,70);
         
         $mail->setFrom($email);
+        $mail->addAddress('info@firstep.uk');     // Add a recipient
         //Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = $subject;
         $mail->Body    = $body;
         $mail->AltBody = strip_tags($body);
 
-        $mail->send();        
+        $mail->send();   
+        
+        
+
+        //send email from info@firstep.uk to inform user we have received their email
+        $body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
+        <p>Kind Regards, <br />
+        Ali Issaee <br />
+        <br/>
+        Owner</p>';
+
+        $outgoing->addAddress($email);
+        $outgoing->isHTML(true);
+        $outgoing->Subject = "Quote";
+        $outgoing->Body = $body;
+        $outgoing->AltBody = strip_tags($body);
+        
+        $outgoing->send();
 
         
     }catch(Exception $e){

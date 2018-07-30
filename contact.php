@@ -57,14 +57,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         
 
         //send email from info@firstep.uk to inform user we have received their email
-        $outgoing->setFrom('info@firstep.uk');
-        $outgoing->addAddress($email);
-        $outgoing->Subject = "Quote";
-        $outgoing->Body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
+        $body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
         <p>Kind Regards, <br />
         Ali Issaee <br />
         <br/>
         Owner</p>';
+
+        $outgoing->addAddress($email);
+        $outgoing->isHTML(true);
+        $outgoing->Subject = "Quote";
+        $outgoing->Body = $body;
+        $outgoing->AltBody = strip_tags($body);
         
         $outgoing->send();
         

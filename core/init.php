@@ -33,6 +33,7 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
+//incoming emails
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings
@@ -43,6 +44,24 @@ try {
     $mail->Password = 'Issaee50!';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
+
+
+} catch (Exception $e) {
+    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+}
+
+
+//outgoing emails
+$outgoing = new PHPMailer(true);                              // Passing `true` enables exceptions
+try {
+    //Server settings
+    $outgoing->isSMTP();                                      // Set mailer to use SMTP
+    $outgoing->Host = 'imap.1and1.co.uk';  // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'info@firstep.uk';                 // SMTP username
+    $mail->Password = 'Issaee50!';                           // SMTP password
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 993;                                    // TCP port to connect to
 
 
 } catch (Exception $e) {

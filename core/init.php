@@ -37,12 +37,12 @@ $mail = new PHPMailer(true);                              // Passing `true` enab
 try {
     //Server settings
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.mailtrap.io';  // Specify main and backup SMTP servers
+    $mail->Host = 'imap.1and1.co.uk';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'fe9884b4bcaf9c';                 // SMTP username
-    $mail->Password = '9a7269bd98a964';                           // SMTP password
+    $mail->Username = 'info@firstep.uk';                 // SMTP username
+    $mail->Password = 'Issaee50!';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 25;                                    // TCP port to connect to
+    $mail->Port = 993;                                    // TCP port to connect to
 
     //Recipients
     $mail->addAddress('info@firstep.uk');     // Add a recipient

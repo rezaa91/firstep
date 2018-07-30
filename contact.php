@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             $_SESSION['modal'] = true;
         }
         
-        //send email
+        //send email to info@firstep.uk
         $to = 'info@firstep.uk';
         $subject = 'Contact form submission';
         $body = '<p><b>' .$name .'</b><br /><i>' .$tel.'</i></p>';
@@ -53,8 +53,20 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $mail->Body    = $body;
         $mail->AltBody = strip_tags($body);
 
-        $mail->send();        
+        $mail->send();  
         
+
+        //send email from info@firstep.uk to inform user we have received their email
+        $mail->Subject = "Quote"
+        $mail->Body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
+        <p>Kind Regards, <br />
+        Ali Issaee <br />
+        <br/>
+        Owner</p>';
+        
+        $mail->send();
+        
+
         
     }catch(Exception $e){ //display errors, if applicable
         $error_msg = $e->getMessage(); //store exceptions

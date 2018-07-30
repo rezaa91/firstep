@@ -57,7 +57,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         
 
         //send email from info@firstep.uk to inform user we have received their email
-        $mail->Subject = "Quote"
+        $mail->Subject = "Quote";
         $mail->Body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
         <p>Kind Regards, <br />
         Ali Issaee <br />

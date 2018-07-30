@@ -44,8 +44,6 @@ try {
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
-    //Recipients
-    $mail->addAddress('info@firstep.uk');     // Add a recipient
 
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;

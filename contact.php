@@ -40,13 +40,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         }
         
         //send email to info@firstep.uk
-        $to = 'info@firstep.uk';
         $subject = 'Contact form submission';
         $body = '<p><b>' .$name .'</b><br /><i>' .$tel.'</i></p>';
         $body .= wordwrap($msg, 70); 
-        $from = $email;
 
         $mail->setFrom($email);
+        $mail->addAddress('info@firstep.uk');     // Add a recipient
+
         //Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = $subject;
@@ -57,6 +57,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         
 
         //send email from info@firstep.uk to inform user we have received their email
+        $mail->setFrom('info@firstep.uk');
+        $mail->addAddress($email);
         $mail->Subject = "Quote";
         $mail->Body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
         <p>Kind Regards, <br />

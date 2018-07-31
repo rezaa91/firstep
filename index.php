@@ -68,7 +68,7 @@ require_once 'includes/handle-modal.php';
                         <h4 class="about-heading">Maintenance <i class="fas fa-wrench"></i></h4>
                     </div>
                     <div class="text-muted">
-                        <p>We understand that your website needs changing regularly to stay modern &amp; unique. That's why we include free updates to your website as part of your package.</p>
+                        <p>We understand that your website needs changing regularly to stay modern &amp; unique. That's why we promote monthly packages which include free updates to your website.</p>
                     </div>
                 </div>
             </div><!--end of column 3-->
@@ -102,10 +102,10 @@ require_once 'includes/handle-modal.php';
                     </div><!--end of example 1-->
                     
                     <div class="col-md-6 featured_projects">
-                        <a href='http://www.bensonsportsmassagetherapy.co.uk' target="_blank" title="www.bensonsportsmassagetherapy.co.uk">
+                        <a href='https://www.axphotography.co.uk' target="_blank" title="www.axphotography.co.uk">
                             <div class="panel text-center">
                                 <div class="featured-project-title">
-                                    <h6 class="text-muted">CALLUM BENSON'S SPORTS MASSAGE THERAPY CLINIC</h6>
+                                    <h6 class="text-muted">AX PHOTOGRAPHY</h6>
                                 </div>
                                 <img src="src/img/massage.jpg" class="img-fluid" />
                             </div>
@@ -190,7 +190,7 @@ require_once 'includes/handle-modal.php';
                         <h5 class="panel-title">Hosting</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="panel-text">Hosting allows your website to be on the World Wide Web and to be easily accessible anywhere in the world. We sort this out for you.</p>
+                        <p class="panel-text">Hosting allows your website to be on the World Wide Web and to be easily accessible anywhere in the world. We are able to assist you on hosting solutions should you require our assistance.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -218,7 +218,7 @@ require_once 'includes/handle-modal.php';
                         <h5 class="panel-title">Support</h5>
                     </div>
                     <div class="service-panel-body">
-                        <p class="panel-text">We understand that there are times you need to update your website. Perhaps you have changed address, or you want to write/update a blog. Luckily for you, we do this all for you. Just simply send us the changes or additions you want and we will complete this for you.</p>
+                        <p class="panel-text">We understand that there are times you need to update your website. Perhaps you have changed address, or you want to write/update a blog. Lucky for you, we provide 2 solutions. We can either train you how to input content at no extra cost, or, you can sign up to a monthly maintenance package and we will update your content for you.</p>
                     </div>
                 </div>
             </div><!--end of col-->
@@ -265,10 +265,10 @@ require_once 'includes/handle-modal.php';
             <div class="card hide-card">
                 <img class="card-img-top card-img" src="src/img/placeholder.png" />
                 <div class="card-body">
-                    <p class="card-text"><!--enter text here--></p>
+                    <p class="card-text">"I needed a web application where I could store my personal and professional photographs. This is exactly what I got and I am very happy with the end product. The whole process was a lot easier than I anticipated."</p>
                 </div>
                 <div class="card-footer text-center">
-                    <small class="text-muted">- YOU -</small>
+                    <small class="text-muted">- AX PHOTOGRAPHY -</small>
                 </div>
             </div><!--end of card 3-->
             
@@ -278,7 +278,7 @@ require_once 'includes/handle-modal.php';
                     <p class="card-text"><!--enter text here--></p>
                 </div>
                 <div class="card-footer text-center">
-                    <small class="text-muted">- YOUR COMPETITOR -</small>
+                    <small class="text-muted">- YOU -</small>
                 </div>
             </div><!--end of card 4-->
         </div><!--end of deck-->

@@ -63,26 +63,6 @@ require_once 'includes/handle-modal.php';
     
     
     
-    
-    <!--images-->
-    <div class="container-fluid who-section" id="image-banner">
-        <div class="row">
-            <div class="col-md-3">
-                <img class="img-fluid" src="src/img/firstep-4.jpg" />
-            </div><!--end of col 1-->
-            <div class="col-md-3">
-                <img class="img-fluid" src="src/img/firstep-3.jpg" />
-            </div><!--end of col 2-->
-            <div class="col-md-3">
-                <img class="img-fluid" src="src/img/firstep-4.jpg" />
-            </div><!--end of col 3-->
-            <div class="col-md-3">
-                <img class="img-fluid" src="src/img/firstep-3.jpg" />
-            </div><!--end of col 4-->
-        </div><!--end of row-->
-    </div><!--end of image banner-->
-    
-    
     <!--desc-->
     <div class="container" id="about-desc">
         <div class="row" id="about-desc-banner">
@@ -94,11 +74,11 @@ require_once 'includes/handle-modal.php';
                     <h4 class="mission-title"><b>OUR MISSION</b></h4>
                 </div>
                 <div class="about-desc-body about-section">
-                    <p class="lead text-muted">"Here at <span class="mission-title">FIRSTEP</span>, our mission is to create websites fit for purpose. We don't believe in a 'one size fits all' approach, which is why we build all our websites from scratch. This means that we do not follow a template-styled theme like a lot of websites out there. Our templates are created with you in mind, this allows us freedom to create whatever you want. The options are limitless!"</p>
+                    <p class="lead text-muted">"Here at <span class="mission-title">FIRSTEP</span>, our mission is to create websites fit for purpose. We don't believe in a 'one size fits all' approach, which is why we build all our websites with you in mind. We like to understand your business and what you do before we even begin discussing websites. This allows your website to match your needs as a business."</p>
                     <p class="text-info"></p>
                 </div>
                 <div class="about-desc-footer about-section">
-                    <blockquote class="text-right">- Ali Issaee, <small>Proprietor</small></blockquote>
+                    <blockquote class="text-right">- Ali Issaee, <small>Owner</small></blockquote>
                 </div>
             </div><!--end of col 2-->
         </div><!--end of row-->

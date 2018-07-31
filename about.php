@@ -90,9 +90,9 @@ require_once 'includes/handle-modal.php';
         <hr />
         <h5 class="text-center social-title">FOLLOW OUR SOCIAL MEDIA ACCOUNTS</h5>
         <ul class="list-inline text-center">
-            <li class="list-inline-item"><a href='#' class="social" target="_blank" title="facebook/firstep"><i class="fab fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href='#' class="social" target="_blank" title="twitter/firstep"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href='#' class="social" target="_blank" title="instagram/firstep"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href='https://facebook.com/firstepweb' class="social" target="_blank" title="facebook/firstep"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href='https://twitter.com/firstep_web' class="social" target="_blank" title="twitter/firstep"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href='https://instagram.com/firstep_web' class="social" target="_blank" title="instagram/firstep"><i class="fab fa-instagram"></i></a></li>
         </ul>
         <hr />
     </div><!--end of social media-->

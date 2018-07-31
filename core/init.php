@@ -25,7 +25,7 @@ ini_set('display_errors', 1);
 
 
 //load email settings
-require('core/config.php');
+require('config.php');
 
 
 //include templates on every page

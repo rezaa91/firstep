@@ -21,7 +21,7 @@ spl_autoload_register('class_loader');
 
 
 //display errors
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 
 //load email settings

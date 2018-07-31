@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.firstep\.uk$ [NC]
+RewriteRule ^(.*)$ https://www.firstep.uk/$1 [R=301,L]

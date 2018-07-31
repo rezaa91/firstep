@@ -82,14 +82,6 @@ footer a{
     font-size:14px;
 }
 
-.mobile{
-    display: none;
-}
-.desktop{
-    display: block;
-}
-
-
 /*
 modal & modal-btn
 */
@@ -175,12 +167,6 @@ media queries
     }
     #inner-footer{
         display:none;
-    }
-    .mobile{
-        display: block;
-    }
-    .desktop{
-        display: none;
     }
 }
 

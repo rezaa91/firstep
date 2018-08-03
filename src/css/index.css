@@ -202,7 +202,7 @@ media queries
     }
 }
 
-@media screen and (max-width: 992px) and (orientation: landscape) {
+@media screen and (max-width: 1050px) and (orientation: landscape) {
     header{
         background-image: url('../img/walkout.jpg');
         background-attachment: unset;
@@ -212,7 +212,7 @@ media queries
 
 /*TABLET*/
 /*screensize*/
-@media screen and (max-width:992px){
+@media screen and (max-width:1050px){
     .featured-project-title{
         display:none;
     }
@@ -221,7 +221,7 @@ media queries
 
 
 /*DESKTOP*/
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1050px){
     #header-content h1{
         font-size:120px;
     }

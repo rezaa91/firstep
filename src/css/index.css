@@ -170,10 +170,9 @@ styling for 'get started' section
 /*
 media queries
 */
+
+/*MOBILE*/
 @media screen and (max-width:768px){
-    header{
-        background-image: url('../img/walkout-sm.jpg');
-    }
     
     #header-content h1{
         font-size:60px;
@@ -200,9 +199,14 @@ media queries
     }
 }
 
+@media sceen and (max-width: 768px) and (orientation: portrait){
+    header{
+        background-image: url('../img/walkout-sm.jpg');
+    }
+}
 
 
-/*TABLE & MOBILE*/
+/*TABLET*/
 /*screensize*/
 @media screen and (max-width:992px){
     .featured-project-title{
@@ -210,18 +214,10 @@ media queries
     }
 }
 
-/*orientation*/
-@media screen and (max-width: 1079px) and (orientation: landscape){
-    header{
-        background-position: bottom;
-        background-attachment: unset;
-    }
-}
-
 
 
 /*DESKTOP*/
-@media screen and (min-width: 1079px){
+@media screen and (min-width: 992px){
     #header-content h1{
         font-size:120px;
     }

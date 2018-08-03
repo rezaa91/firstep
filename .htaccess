@@ -1,5 +1,10 @@
 RewriteEngine On
 
+#allow localhost
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+
+
 # If we receive a forwarded http request from a proxy...
 RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
 

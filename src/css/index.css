@@ -200,12 +200,27 @@ media queries
     }
 }
 
+
+
+/*TABLE & MOBILE*/
+/*screensize*/
 @media screen and (max-width:992px){
     .featured-project-title{
         display:none;
     }
 }
 
+/*orientation*/
+@media screen and (orientation: landscape){
+    header{
+        background-position:center;
+        background-attachment: unset;
+    }
+}
+
+
+
+/*DESKTOP*/
 @media screen and (min-width: 992px){
     #header-content h1{
         font-size:120px;

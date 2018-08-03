@@ -112,6 +112,20 @@ $(function(){
     
     function validate_msg(){
         msg_outcome = validate.validateStr(msg); //bool
+
+        //inform user when maximum limit reached
+        if(this.value.length === 500){
+            let value = this.value;
+            let value_length = value.length;
+            let new_value = value.substr(0, value_length-1);
+            this.value = new_value;
+            return;
+        }
+
+        if(this.value.length >= 499){
+            $('#msg_error').text('Maximum limit reached');
+            return;
+        }
         
         if(!msg_outcome){ //if incorrect data - inform user
             $('#msg_error').text('* please enter a message');

@@ -172,7 +172,7 @@ media queries
 */
 
 /*MOBILE*/
-@media screen and (max-width:768px){
+@media screen and (max-width:766px){
     header{
         background-image: url('../img/walkout-sm.jpg');
     }
@@ -202,7 +202,7 @@ media queries
     }
 }
 
-@media screen and (max-width: 1050px) and (orientation: landscape) {
+@media screen and (max-width: 766px) and (orientation: landscape) {
     header{
         background-image: url('../img/walkout.jpg');
         background-attachment: unset;

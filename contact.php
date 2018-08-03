@@ -118,7 +118,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                     
                     <div class="form-group">
                         <label for="message">HOW CAN WE HELP?</label><br />
-                        <textarea rows="5" name="message" class="form-control" id="msg" placeholder="Please include a brief message of what you are after. No need to go mad as we will contact you for further details" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?>><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];} ?></textarea>
+                        <textarea rows="5" name="message" class="form-control" id="msg" placeholder="Please include a brief message of what you are after. We will contact you for the finer details." maxlength='500' <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?>><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];} ?></textarea>
                         <span id="msg_error" class="error"></span>
                     </div>
                     

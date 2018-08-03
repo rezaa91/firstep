@@ -213,8 +213,7 @@ media queries
 /*orientation*/
 @media screen and (max-width: 1079px) and (orientation: landscape){
     header{
-        background-size: 100%;
-        background-position: center;
+        background-position: bottom;
         background-attachment: unset;
     }
 }

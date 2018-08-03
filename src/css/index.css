@@ -211,9 +211,8 @@ media queries
 }
 
 /*orientation*/
-@media screen and (orientation: landscape){
+@media screen and (max-width: 1079px) and (orientation: landscape){
     header{
-        background-position:center;
         background-attachment: unset;
     }
 }
@@ -221,7 +220,7 @@ media queries
 
 
 /*DESKTOP*/
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1079px){
     #header-content h1{
         font-size:120px;
     }

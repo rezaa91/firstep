@@ -206,6 +206,7 @@ media queries
     header{
         background-image: url('../img/walkout.jpg');
         background-attachment: unset;
+        background-position: bottom;
     }
 }
 

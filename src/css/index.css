@@ -173,6 +173,9 @@ media queries
 
 /*MOBILE*/
 @media screen and (max-width:768px){
+    header{
+        background-image: url('../img/walkout-sm.jpg');
+    }
     
     #header-content h1{
         font-size:60px;
@@ -199,12 +202,12 @@ media queries
     }
 }
 
-@media sceen and (max-width: 768px) and (orientation: portrait){
+@media screen and (max-width: 992px) and (orientation: landscape) {
     header{
-        background-image: url('../img/walkout-sm.jpg');
+        background-image: url('../img/walkout.jpg');
+        background-attachment: unset;
     }
 }
-
 
 /*TABLET*/
 /*screensize*/

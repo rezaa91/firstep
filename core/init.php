@@ -3,7 +3,7 @@
 session_start(); //begin session
 
 //configuration array
-$GLOBALS['congig'] = array(
+$GLOBALS['config'] = array(
     'mysql' => array(
         'host' => 'localhost',
         'username' => 'root',
@@ -29,8 +29,8 @@ require('core/config.php');
 
 
 //include templates on every page
-require_once 'includes/header.html';
-require_once 'includes/navigation.html';
+include_once 'includes/header.html';
+include_once 'includes/navigation.html';
 
 
 ?>

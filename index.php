@@ -107,7 +107,7 @@ require_once 'includes/handle-modal.php';
                                 <div class="featured-project-title">
                                     <h6 class="text-muted">AX PHOTOGRAPHY</h6>
                                 </div>
-                                <img src="src/img/massage.jpg" class="img-fluid" />
+                                <img src="src/img/ax_desktop.png" class="img-fluid" />
                             </div>
                         </a>
                     </div><!--end of example 2-->
@@ -263,7 +263,7 @@ require_once 'includes/handle-modal.php';
             </div><!--end of card 2-->
             
             <div class="card hide-card">
-                <img class="card-img-top card-img" src="src/img/placeholder.png" />
+                <img class="card-img-top card-img" src="src/img/ax_profile.png" />
                 <div class="card-body">
                     <p class="card-text">"I needed a web application where I could store my personal and professional photographs. This is exactly what I got and I am very happy with the end product. The whole process was a lot easier than I anticipated."</p>
                 </div>

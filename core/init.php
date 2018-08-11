@@ -11,8 +11,8 @@ function class_loader($class){
 spl_autoload_register('class_loader');
 
 
-//display errors
-ini_set('display_errors', 1);
+//display errors - turn off on live server
+ini_set('display_errors', 0);
 
 
 //load email settings
@@ -20,11 +20,9 @@ require('smtp.php');
 
 
 //load database settings
-
-
-//include templates on every page
-include_once '../includes/header.html';
-include_once '../includes/navigation.html';
+/*
+require 'db_connection.php';
+*/
 
 
 ?>

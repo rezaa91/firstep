@@ -1,34 +1,30 @@
-<!--contact-->
-
 <?php
-
-$css = "src/css/contact.css";
-$js = 'src/js/contact.js';
-$page_title = "contact us";
 
 require_once '../core/init.php';
 
+$page_title = "contact us";
+include '../includes/header.inc.php';
 
 
-//handle form
+//handle contact form
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     try{ //validate form
         
-        $validate = new Validate(); //create instance to validate form
+        $validateContactForm = new Validate(); //create instance to validate form
         
         
         //validate data and store in individual sessions
-        $name = $validate->validateString($_POST['name'],'name'); //store name if valid
+        $name = $validateContactForm->validateString($_POST['name'],'name'); //store name if valid
         $_SESSION['name'] = $name;
         
-        $email = $validate->validateEmail($_POST['email']); //store email if valid
+        $email = $validateContactForm->validateEmail($_POST['email']); //store email if valid
         $_SESSION['email'] = $email;
         
-        $tel = $validate->validateNumber($_POST['telephone'], 'contact number'); //store telephone if valid
+        $tel = $validateContactForm->validateNumber($_POST['telephone'], 'contact number'); //store telephone if valid
         $_SESSION['tel'] = $tel;
         
-        $msg = $validate->validateString($_POST['message'],'message'); //store msg from user
+        $msg = $validateContactForm->validateString($_POST['message'],'message'); //store msg from user
         $_SESSION['msg'] = $msg;
         
         
@@ -39,131 +35,49 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
             $_SESSION['modal'] = true;
         }
         
-        //send email to info@firstep.uk
+        //content of email
         $subject = 'Contact form submission';
         $body = '<p><b>' .$name .'</b><br /><i>' .$tel.'</i></p>';
         $body .= wordwrap($msg, 70); 
 
+        //email from
         $mail->setFrom($email);
-        $mail->addAddress('info@firstep.uk');     // Add a recipient
+        $mail->addAddress('info@firstep.uk');
 
-        //Content
-        $mail->isHTML(true);                                  // Set email format to HTML
+        //Add content to instance
+        $mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body    = $body;
         $mail->AltBody = strip_tags($body);
 
-        $mail->send();  
-        
+        //send
+        if( $mail->send() ){
+            //send email from info@firstep.uk to inform user we have received their email
+            $body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
+            <p>Kind Regards, <br />
+            Ali Issaee <br />
+            <br/>
+            Owner</p>';
 
-        //send email from info@firstep.uk to inform user we have received their email
-        $body = '<p>Thank you for your email. We will be in contact with you shortly to discuss your query.</p>
-        <p>Kind Regards, <br />
-        Ali Issaee <br />
-        <br/>
-        Owner</p>';
+            $outgoing->addAddress($email);
+            $outgoing->isHTML(true);
+            $outgoing->Subject = "Quote";
+            $outgoing->Body = $body;
+            $outgoing->AltBody = strip_tags($body);
+            
+            $outgoing->send();
+        }else{
+            throw new Expcetion('Sorry, the email was not sent. Please try again');
+            exit();
+        }  
 
-        $outgoing->addAddress($email);
-        $outgoing->isHTML(true);
-        $outgoing->Subject = "Quote";
-        $outgoing->Body = $body;
-        $outgoing->AltBody = strip_tags($body);
-        
-        $outgoing->send();
-        
-
-        
     }catch(Exception $e){ //display errors, if applicable
-        $error_msg = $e->getMessage(); //store exceptions
+        $error_msg = $e->getMessage();
     }
 
 }
 
-?>
 
-
-
-<div id="wrapper">
-   
-    <!--header-->
-    <div class="container-fluid" id="header">
-        <div class="container" id="header-text">
-            <h3 class="header-title">Get in touch today.</h3>
-        </div>
-    </div><!--end of header-->
-    
-    <!--contact form-->
-    <div class="container" id="contact">
-        <div class="row justify-content-between">
-           <!--form-->
-            <div class="col-md-6" id="form-details">
-                <form role="form" action="" method="post">
-                    <div class="form-group">
-                        <label for="name">NAME:</label><br />
-                        <input type="text" name="name" class="form-control" id="name" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['name'])){echo $_SESSION['name'];} ?>"/>
-                        <span id="name_error" class="error"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">EMAIL:</label><br />
-                        <input type="text" name="email" class="form-control" id="email" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['email'])){echo $_SESSION['email'];} ?>" />
-                        <span id="email_error" class="error"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="">TELEPHONE:</label><br />
-                        <input type="text" name="telephone" class="form-control" id="tel" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['tel'])){echo $_SESSION['tel'];} ?>" />
-                        <span id="tel_error" class="error"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">HOW CAN WE HELP?</label><br />
-                        <textarea rows="5" name="message" class="form-control" id="msg" placeholder="Please include a brief message of what you are after. We will contact you for the finer details." maxlength='500' <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?>><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];} ?></textarea>
-                        <span id="msg_error" class="error"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <input type="submit" name="submit" class="form-control btn" id="send-btn" <?php if(isset($_SESSION['modal'])){echo 'disabled';} ?> value="<?php if(isset($_SESSION['modal'])){echo "SENT";}else{echo "SEND";} ?>" />
-                    </div>
-                    
-                    <div class="form-group">
-                        <?php if(isset($_SESSION['modal'])){ echo '<span class="text-muted">Did you input incorrect details? <a href="mailto:info@firstep.uk">send us an email</a> to rectify this';} ?>
-                    </div>
-                </form><!--end of form-->
-            </div><!--end of row-->
-            
-            
-            <!--contact details-->
-            <div class="col-md-4" id="contact-details">
-                <address>
-                    <div class="address-control">
-                        <h5 class="address-header"><i class="far fa-clock"></i> Opening Times</h5>
-                        <p class="address-body text-muted">Daily, 8am-8pm</p>
-                    </div>
-                    
-                    <div class="address-control">
-                        <h5 class="address-header"><i class="fas fa-at"></i> General Enquiries</h5>
-                        <p class="address-body text-muted">info@firstep.uk</p>
-                    </div>
-                    
-                    <div class="address-control">
-                        <h5 class="address-header"><i class="fas fa-mobile-alt"></i> Tel</h5>
-                        <p class="address-body text-muted">07873903800</p>
-                    </div>
-                    
-                    <div class="address-control">
-                        <h5 class="address-header"><i class="fas fa-map-marker"></i> Where Are We?</h5>
-                        <p class="address-body text-muted">Kingswood,<br />Kingston Upon Hull,<br />HU7, <br />United Kingdom</p>
-                    </div>
-                </address>
-            </div><!--end of contact details-->
-        </div><!--end of row-->
-    </div> 
-       
-</div>
-
-
-
-<?php
-include_once('../includes/footer.html');
+include '../views/contact.html';
+include '../includes/footer.inc.php';
 ?>

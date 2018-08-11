@@ -21,7 +21,7 @@ require_once '../includes/handle-modal.php';
     <header id="header">
         <div id="header-content" class="container text-center">
             <div id="header-text">
-                <h1 id="main_header">FIRSTEP</h1>
+                <h1 id="main_header">FIRSTEPP</h1>
                 <h4><span class="slogan">WE DESIGN.</span> <span class="slogan">WE DEVELOP.</span></h4>
             </div>
             <div id="header-buttons">

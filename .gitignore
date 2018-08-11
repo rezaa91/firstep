@@ -1,4 +1,5 @@
 info/
-vendor/
-core/smtp.php
+vendor/ 
+<!-- core/smtp.php -->
 core/db_connection.php
+<!-- .htaccess -->

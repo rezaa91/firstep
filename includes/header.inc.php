@@ -11,21 +11,21 @@
         <meta name="keywords" content="Website, design, development, hosting, digital, marketting" />
         <meta name="author" content="Ali Issaee"/>
         
+
         <!--page title-->
         <title><?php if(isset($page_title)){echo $page_title;} ?></title>
         <link rel="shortcut icon" href="src/img/logo-title.png" />
         
+
         <!--links to bootstrap and jquery-->
         <link rel="stylesheet" href="src/lib/bootstrap.min.css"/>
         <script type="text/javascript" src="src/lib/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="src/lib/bootstrap.bundle.min.js"></script>
     
+
         <!--personal scripts and stylesheets-->
-        <link rel="stylesheet" href='src/css/h_f.css' /><!--header and footer css-->
-        <script type="text/javascript" src="src/js/h_f.js"></script><!--header and footer js-->
-        <link rel="stylesheet" href="<?php if(isset($css)){echo $css;} ?>" /><!--page css-->
-        <script type="text/javascript" src="<?php if(isset($js)){echo $js;} ?>"></script><!--page js-->
-        <?php if( (isset($modal)) && ($modal == true) ){echo '<script type="text/javascript" src="src/js/modal.js"></script>' ;} ?><!--modal js-->
+        <link rel='stylesheet' href='src/css/app.css'/>
+        <script type="text/javascript" src='src/js/app.js' ></script>
         
         <!--google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
@@ -34,6 +34,8 @@
         
         <!--cookie consent-->
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
+        <!--cookie message-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
         <script>
         window.addEventListener("load", function(){
@@ -52,6 +54,9 @@
         
     </head><!--end of head-->
     
+
     
+    <!--body begin-->
     <body>
-    
+      <?php include 'navigation.html'; ?>
+      <script>header();</script>

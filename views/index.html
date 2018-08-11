@@ -1,20 +1,4 @@
-<?php
-
-$page_title = "FIRSTEP";
-$js = "src/js/index.js";
-$css = "src/css/index.css";
-$modal = true;
-
-require_once 'core/init.php';
-require_once 'includes/handle-modal.php';
-
-
-
-
-?>
-
-
-<div id="wrapper">
+<div id="index-wrapper">
         
     
     <!--header; to include - nav, page title with buttons to access important content-->
@@ -305,11 +289,7 @@ require_once 'includes/handle-modal.php';
     </div>
     
     
-    
+    <script>index();</script>
     
 
 </div><!--end of wrapper-->
-
-<?php
-require_once('includes/footer.html');
-?>

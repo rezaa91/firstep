@@ -1,0 +1,143 @@
+#about-wrapper{
+
+    /*
+    header styling
+    */
+    #header{
+        height: 50vh;
+        background-color:rgb(90,155,210);
+    }
+    #header-text{
+        padding-top:30vh;
+        font-family:'raleway',sans-serif;
+    }
+    .header-title{
+        color:rgb(251,253,255);
+    }
+    .header-sm-title{
+        display:none;
+    }
+
+
+
+    /*
+    who are we sections
+    */
+    #who{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    #who-header{
+        margin-bottom:30px;
+    }
+
+    .who-title{
+        color:rgb(67,87,163);
+    }
+
+
+
+
+    /*
+    styling for about about desc
+    */
+    .mission-title{
+        color:rgb(67,87,163);
+    }
+    #about-desc{
+        padding: 70px 20px;
+        background-color:rgb(233,236,239);
+    }
+    #about-desc-banner img{
+        border-radius:360px;
+    }
+    .about-desc-header{
+        padding:10px 5px;
+    }
+    .about-desc-body{
+        padding:5px;
+    }
+    .about-desc-footer{
+        padding:5px;
+        font-size:22px;
+    }
+    .about-desc-footer blockquote{
+        color:rgb(90,155,210);
+    }
+    /*
+    styling for social media
+    */
+    #social-media{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .social{
+        font-size:34px;
+    }
+    #social-media a{
+        color:rgb(67,87,163);
+    }
+    #social-media a:hover{
+        color:rgb(55,70,150);
+    }
+    .social-title{
+        color:rgb(90,155,210);
+    }
+
+    /*
+    styling for call to action
+    */
+    #call-to-action{
+        padding-top:70px;
+        padding-bottom:70px;
+        margin-bottom:0px;
+    }
+    .call-title{
+        color:rgb(90,155,210);
+    }
+    #call-btn{
+        background-color:rgb(216,73,81);
+        color:rgb(251,253,255);
+    }
+    #call-btn:hover{
+        opacity:0.9;
+    }
+}
+
+
+
+/*
+Make responsive
+*/
+
+@media screen and (max-width:768px){
+    #about-wrapper{
+
+        #header{
+            display:none;
+        }
+        
+        #image-banner{
+            display:none;
+        }
+        #who{
+            text-align:center;
+            padding-bottom:20px;
+            background-color:rgb(90,155,210);
+            margin-bottom: 0px;
+        }
+        .who-section{
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+        .who-desc p{
+            color:rgb(251,253,255) !important;
+        }
+        
+        #social-media hr{
+            display: none;
+        }
+    }
+}
+

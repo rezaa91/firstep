@@ -1,26 +1,11 @@
-<!--about us-->
+<div id="about-wrapper">
 
-<?php
-$css = "src/css/about-us.css";
-$js = 'src/js/about-us.js';
-$page_title = "about us";
-$modal = true;
-
-require_once 'core/init.php';
-require_once 'includes/handle-modal.php';
-
-?>
-
-
-
-<div id="wrapper">
     <!--header-->
     <div class="container-fluid" id="header">
         <div class="container" id="header-text">
             <h3 class="header-title">"Our mission is to create wonderful websites,<br />tailored towards your business."</h3>
         </div>
     </div><!--end of header-->
-    
     
     
     <!--who are we-->
@@ -102,20 +87,13 @@ require_once 'includes/handle-modal.php';
     
     <!--call to action-->
     <div class="container-fluid jumbotron" id="call-to-action">
-        <div class="text-center">
-            <h4 class="call-title">GET THE BALL ROLLING...</h4>
-            <p class="lead text-muted contact-desc">Simply fill in a short form and we will be in touch, it's as simple as that.</p>
-            <a href='contact.php' class="btn btn-lg" id="call-btn">Contact Us</a> 
-        </div>
-    </div><!--end of call to action-->
+            <div class="text-center">
+                <h4 class="call-title">GET THE BALL ROLLING...</h4>
+                <p class="lead text-muted contact-desc">Simply fill in a short form and we will be in touch, it's as simple as that.</p>
+                <a href='contact.php' class="btn btn-lg" id="call-btn">Contact Us</a> 
+            </div>
+        </div><!--end of call to action-->
     
-    
-</div>
 
-
-
-
-
-<?php
-include_once('includes/footer.html');
-?>
+    <script>about();</script>
+</div><!--end of wrapper-->

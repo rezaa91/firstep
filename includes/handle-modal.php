@@ -66,7 +66,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){ //if form submitted, or previously sub
     
     
 }else{ //if form has not yet been submitted, display form
-    require_once 'includes/modal.html';
+    require_once '../includes/modal.html';
 }
 
 

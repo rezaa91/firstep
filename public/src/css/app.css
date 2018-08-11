@@ -1,0 +1,587 @@
+/*
+default settings
+*/
+* {
+  font-family: "open sans", "sans-serif";
+  box-sizing: border-box;
+}
+
+/*
+nav settings
+*/
+nav {
+  border-bottom: 1px solid #fbfdff;
+}
+
+.navbar-brand {
+  color: #efefef !important;
+  font-family: "raleway", "sans-serif";
+  font-weight: bold;
+}
+
+#logo {
+  width: 25px;
+}
+
+/*
+Stylings for footer
+*/
+/*general default footer*/
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+/*outer footer*/
+#outer-footer {
+  border-top: 2px solid black;
+  color: #fbfdff;
+  background-color: #242526;
+  padding: 20px;
+}
+
+#social_links li {
+  display: inline-block;
+  font-size: 22px;
+  background-color: #646466;
+  padding: 4px 11px;
+  border-radius: 100px;
+}
+
+#social_links a {
+  color: #242526;
+}
+
+#social_links a:hover {
+  color: #050505;
+}
+
+#site-map li {
+  font-size: 14px;
+  margin: 2px 0px;
+  display: inline-block;
+}
+
+#site-map a {
+  color: #fbfdff;
+}
+
+#footer-logo {
+  font-family: "raleway", "sans-serif";
+  font-size: 38px;
+  color: #4357a3;
+}
+
+.contact-info {
+  color: #4357a3;
+}
+
+/*bottom footer*/
+#inner-footer {
+  background-color: #050505;
+  color: #fbfdff;
+  padding: 5px;
+}
+
+#inner-footer p {
+  font-size: 14px;
+}
+
+/*
+modal & modal-btn
+*/
+#modal-btn {
+  position: fixed;
+  border-radius: 100px;
+  z-index: 1;
+  bottom: 20px;
+  right: 10px;
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+  background-color: #d84951;
+  color: #fbfdff;
+}
+
+#modal-btn:hover {
+  opacity: 0.9;
+}
+
+.modal-header {
+  background-color: #4357a3;
+}
+
+.modal-title {
+  color: #fbfdff;
+}
+
+#modal-label {
+  font-family: "raleway", "sans-serif";
+}
+
+#quote-btn {
+  background-color: #d84951;
+  color: #fbfdff;
+}
+
+#modal-btn-sent {
+  position: fixed;
+  border-radius: 100px;
+  z-index: 1;
+  bottom: 20px;
+  right: 10px;
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+  background-color: #fbfdff;
+  color: #4357a3;
+}
+
+.sent {
+  font-size: 20px;
+  display: block;
+}
+
+/*
+js style - to apply to navbar background when start to scroll
+*/
+.white {
+  background-color: #fbfdff;
+}
+
+.brand {
+  color: #4357a3 !important;
+}
+
+/*
+media queries
+*/
+@media screen and (max-width: 768px) {
+  /*give solid background to navbar and adjust navbar header accordingly*/
+  nav {
+    background-color: #efefef;
+  }
+
+  .navbar-brand {
+    color: #1e1e1e !important;
+  }
+
+  .contact-info {
+    font-size: 13px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+  }
+
+  #inner-footer {
+    display: none;
+  }
+}
+#index-wrapper {
+  /*
+  set header default settings
+      .position header content
+      .style navigation bar
+  */
+  /*
+  styling for about
+  */
+  /*
+  styling for projects section
+  */
+  /*
+  Styling for services
+  */
+  /*
+  styling for testomonials
+  */
+  /*
+  styling for 'get started' section
+  */
+}
+#index-wrapper header {
+  background-image: url("../img/walkout.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+#index-wrapper #header-content {
+  padding-top: 30vh;
+  color: #fbfdfd;
+}
+#index-wrapper #header-content h1 {
+  font-family: "raleway", "sans-serif";
+  font-size: 80px;
+  margin-bottom: 10px;
+  color: #4357a3;
+}
+#index-wrapper #header-content h4 {
+  font-style: italic;
+  font-size: 28px;
+}
+#index-wrapper #header-buttons {
+  margin-top: 20px;
+}
+#index-wrapper #header-buttons a:hover {
+  opacity: 0.9;
+}
+#index-wrapper #projects_btn {
+  background-color: #fbfdff;
+  color: #5a9bd2;
+}
+#index-wrapper #main_btn {
+  background-color: #d84951;
+  color: #fbfdff;
+}
+#index-wrapper #about {
+  margin: 50px auto;
+}
+#index-wrapper #about-tag {
+  font-family: "raleway", "sans-serif";
+  margin-bottom: 30px;
+}
+#index-wrapper .about-heading {
+  color: #4357a3;
+}
+#index-wrapper .about-column {
+  padding: 10px;
+}
+#index-wrapper .panel {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#index-wrapper #projects h6 {
+  padding: 5px;
+  font-weight: bold;
+}
+#index-wrapper #projects a:hover {
+  text-decoration: none;
+}
+#index-wrapper .panel:hover {
+  box-shadow: 1px 1px 3px black;
+}
+#index-wrapper #featured_projects {
+  margin: 0;
+}
+#index-wrapper .featured-header {
+  color: #5a9bd2;
+}
+#index-wrapper #services {
+  padding: 20px 20px 50px;
+  background-color: #242526;
+}
+#index-wrapper #service-header p {
+  color: #fbfdff;
+}
+#index-wrapper #service-header h2 {
+  color: #5a9bd2;
+}
+#index-wrapper #service-header hr {
+  border-color: white;
+}
+#index-wrapper .service-panel {
+  padding: 15px;
+}
+#index-wrapper .service-panel-body {
+  font-size: 14px;
+}
+#index-wrapper .panel-title {
+  color: #4357a3;
+}
+#index-wrapper .panel-text {
+  color: #fbfdff;
+}
+#index-wrapper #testomonials {
+  padding: 20px 20px 50px;
+}
+#index-wrapper #test-header h2 {
+  color: #5a9bd2;
+}
+#index-wrapper #get-started {
+  background-color: #5a9bd2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#index-wrapper #get-started-header h1 {
+  color: #d84951;
+  text-align: center;
+}
+#index-wrapper #get-started-body {
+  text-align: center;
+  color: #fbfdff;
+}
+#index-wrapper #get-started-body h3 {
+  color: #4357a3;
+}
+#index-wrapper #get-started-body a {
+  background-color: #ff4951;
+  color: #fbfdff;
+}
+#index-wrapper #get-started-body a:hover {
+  opacity: 0.9;
+}
+
+/*
+media queries
+*/
+/*MOBILE*/
+@media screen and (max-width: 766px) {
+  #index-wrapper {
+    /*align about columns central*/
+  }
+  #index-wrapper header {
+    background-image: url("../img/walkout-sm.jpg");
+  }
+  #index-wrapper #header-content h1 {
+    font-size: 60px;
+  }
+  #index-wrapper #header-content h4 {
+    font-size: 20px;
+  }
+  #index-wrapper #about-tag {
+    font-size: 18px;
+  }
+  #index-wrapper .service-panel {
+    text-align: center;
+  }
+  #index-wrapper .hide-card {
+    display: none;
+  }
+  #index-wrapper .about-column {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 766px) and (orientation: landscape) {
+  #index-wrapper header {
+    background-image: url("../img/walkout.jpg");
+    background-attachment: unset;
+    background-position: bottom;
+  }
+}
+/*TABLET*/
+/*screensize*/
+@media screen and (max-width: 1050px) {
+  #index-wrapper .featured-project-title {
+    display: none;
+  }
+}
+/*DESKTOP*/
+@media screen and (min-width: 1050px) {
+  #index-wrapper #header-content h1 {
+    font-size: 120px;
+  }
+  #index-wrapper #header-content h4 {
+    font-size: 40px;
+  }
+}
+#about-wrapper {
+  /*
+  header styling
+  */
+  /*
+  who are we sections
+  */
+  /*
+  styling for about about desc
+  */
+  /*
+  styling for social media
+  */
+  /*
+  styling for call to action
+  */
+}
+#about-wrapper #header {
+  height: 50vh;
+  background-color: #5a9bd2;
+}
+#about-wrapper #header-text {
+  padding-top: 30vh;
+  font-family: "raleway", sans-serif;
+}
+#about-wrapper .header-title {
+  color: #fbfdff;
+}
+#about-wrapper .header-sm-title {
+  display: none;
+}
+#about-wrapper #who {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#about-wrapper #who-header {
+  margin-bottom: 30px;
+}
+#about-wrapper .who-title {
+  color: #4357a3;
+}
+#about-wrapper .mission-title {
+  color: #4357a3;
+}
+#about-wrapper #about-desc {
+  padding: 70px 20px;
+  background-color: #e9ecef;
+}
+#about-wrapper #about-desc-banner img {
+  border-radius: 360px;
+}
+#about-wrapper .about-desc-header {
+  padding: 10px 5px;
+}
+#about-wrapper .about-desc-body {
+  padding: 5px;
+}
+#about-wrapper .about-desc-footer {
+  padding: 5px;
+  font-size: 22px;
+}
+#about-wrapper .about-desc-footer blockquote {
+  color: #5a9bd2;
+}
+#about-wrapper #social-media {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#about-wrapper .social {
+  font-size: 34px;
+}
+#about-wrapper #social-media a {
+  color: #4357a3;
+}
+#about-wrapper #social-media a:hover {
+  color: #374696;
+}
+#about-wrapper .social-title {
+  color: #5a9bd2;
+}
+#about-wrapper #call-to-action {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+}
+#about-wrapper .call-title {
+  color: #5a9bd2;
+}
+#about-wrapper #call-btn {
+  background-color: #d84951;
+  color: #fbfdff;
+}
+#about-wrapper #call-btn:hover {
+  opacity: 0.9;
+}
+
+/*
+Make responsive
+*/
+@media screen and (max-width: 768px) {
+  #about-wrapper #header {
+    display: none;
+  }
+  #about-wrapper #image-banner {
+    display: none;
+  }
+  #about-wrapper #who {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #5a9bd2;
+    margin-bottom: 0px;
+  }
+  #about-wrapper .who-section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #about-wrapper .who-desc p {
+    color: #fbfdff !important;
+  }
+  #about-wrapper #social-media hr {
+    display: none;
+  }
+}
+#contact-wrapper {
+  /*
+  styling for header
+  */
+  /*
+  styling for contact form
+  */
+  /*style client side form validation messages*/
+}
+#contact-wrapper #header {
+  height: 40vh;
+  background-image: url("../img/humber-bridge1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#contact-wrapper #header-text {
+  position: relative;
+  top: 30vh;
+  font-family: "raleway", sans-serif;
+}
+#contact-wrapper .header-title {
+  color: #fbfdff;
+}
+#contact-wrapper #contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+#contact-wrapper label {
+  font-weight: bold;
+}
+#contact-wrapper #send-btn {
+  background-color: #d84951;
+  color: #fbfdff;
+}
+#contact-wrapper #form-details {
+  padding: 20px;
+}
+#contact-wrapper #contact-details {
+  padding: 20px;
+  border-left: 2px solid #4357a3;
+  background-color: #fbfdff;
+}
+#contact-wrapper .address-header {
+  color: #4357a3;
+}
+#contact-wrapper textarea {
+  resize: none;
+}
+#contact-wrapper .error {
+  color: #ff4951;
+  font-style: italic;
+  font-size: 15px;
+  display: inline-block;
+}
+
+/*
+make responsive - media queries
+*/
+@media screen and (max-width: 768px) {
+  #contact-wrapper #contact {
+    min-width: 100%;
+  }
+  #contact-wrapper #contact-details {
+    border-left: none;
+    text-align: Center;
+  }
+  #contact-wrapper #contact {
+    margin: 0;
+  }
+  #contact-wrapper .form-group {
+    margin-bottom: 2px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

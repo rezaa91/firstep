@@ -14,7 +14,7 @@ try {
     $mail->Host = 'auth.smtp.1and1.co.uk';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'info@firstep.uk';                 // SMTP username
-    $mail->Password = 'Issaee50!';                           // SMTP password
+    $mail->Password = getenv(email_pass);                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 } catch (Exception $e) {
@@ -28,7 +28,7 @@ try {
     $outgoing->Host = 'auth.smtp.1and1.co.uk';  // Specify main and backup SMTP servers
     $outgoing->SMTPAuth = true;                               // Enable SMTP authentication
     $outgoing->Username = 'info@firstep.uk';                 // SMTP username
-    $outgoing->Password = 'Issaee50!';                           // SMTP password
+    $outgoing->Password = getenv(email_pass);                           // SMTP password
     $outgoing->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $outgoing->Port = 587;                                    // TCP port to connect to
     $outgoing->From = 'info@firstep.uk';

@@ -337,37 +337,33 @@ media queries
 */
 /*MOBILE*/
 @media screen and (max-width: 766px) {
-  header {
+  #index-wrapper {
+    /*align about columns central*/
+  }
+  #index-wrapper header {
     background-image: url("../img/walkout-sm.jpg");
   }
-
-  #header-content h1 {
+  #index-wrapper #header-content h1 {
     font-size: 60px;
   }
-
-  #header-content h4 {
+  #index-wrapper #header-content h4 {
     font-size: 20px;
   }
-
-  #about-tag {
+  #index-wrapper #about-tag {
     font-size: 18px;
   }
-
-  .service-panel {
+  #index-wrapper .service-panel {
     text-align: center;
   }
-
-  .hide-card {
+  #index-wrapper .hide-card {
     display: none;
   }
-
-  /*align about columns central*/
-  .about-column {
+  #index-wrapper .about-column {
     text-align: center;
   }
 }
 @media screen and (max-width: 766px) and (orientation: landscape) {
-  header {
+  #index-wrapper header {
     background-image: url("../img/walkout.jpg");
     background-attachment: unset;
     background-position: bottom;
@@ -376,17 +372,16 @@ media queries
 /*TABLET*/
 /*screensize*/
 @media screen and (max-width: 1050px) {
-  .featured-project-title {
+  #index-wrapper .featured-project-title {
     display: none;
   }
 }
 /*DESKTOP*/
 @media screen and (min-width: 1050px) {
-  #header-content h1 {
+  #index-wrapper #header-content h1 {
     font-size: 120px;
   }
-
-  #header-content h4 {
+  #index-wrapper #header-content h4 {
     font-size: 40px;
   }
 }
@@ -490,31 +485,26 @@ media queries
 Make responsive
 */
 @media screen and (max-width: 768px) {
-  #header {
+  #about-wrapper #header {
     display: none;
   }
-
-  #image-banner {
+  #about-wrapper #image-banner {
     display: none;
   }
-
-  #who {
+  #about-wrapper #who {
     text-align: center;
     padding-bottom: 20px;
     background-color: #5a9bd2;
     margin-bottom: 0px;
   }
-
-  .who-section {
+  #about-wrapper .who-section {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-
-  .who-desc p {
+  #about-wrapper .who-desc p {
     color: #fbfdff !important;
   }
-
-  #social-media hr {
+  #about-wrapper #social-media hr {
     display: none;
   }
 }
@@ -579,20 +569,17 @@ Make responsive
 make responsive - media queries
 */
 @media screen and (max-width: 768px) {
-  #contact {
+  #contact-wrapper #contact {
     min-width: 100%;
   }
-
-  #contact-details {
+  #contact-wrapper #contact-details {
     border-left: none;
     text-align: Center;
   }
-
-  #contact {
+  #contact-wrapper #contact {
     margin: 0;
   }
-
-  .form-group {
+  #contact-wrapper .form-group {
     margin-bottom: 2px;
   }
 }

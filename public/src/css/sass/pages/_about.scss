@@ -112,30 +112,32 @@ Make responsive
 */
 
 @media screen and (max-width:768px){
-    #header{
-        display:none;
-    }
-    
-    #image-banner{
-        display:none;
-    }
-    #who{
-        text-align:center;
-        padding-bottom:20px;
-        background-color:rgb(90,155,210);
-        margin-bottom: 0px;
-    }
-    .who-section{
-        margin-top:5px;
-        margin-bottom:5px;
-    }
-    .who-desc p{
-        color:rgb(251,253,255) !important;
-    }
-    
-    #social-media hr{
-        display: none;
-    }
+    #about-wrapper{
 
+        #header{
+            display:none;
+        }
+        
+        #image-banner{
+            display:none;
+        }
+        #who{
+            text-align:center;
+            padding-bottom:20px;
+            background-color:rgb(90,155,210);
+            margin-bottom: 0px;
+        }
+        .who-section{
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+        .who-desc p{
+            color:rgb(251,253,255) !important;
+        }
+        
+        #social-media hr{
+            display: none;
+        }
+    }
 }
 

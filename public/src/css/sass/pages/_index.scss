@@ -174,48 +174,54 @@ media queries
 
 /*MOBILE*/
 @media screen and (max-width:766px){
-    header{
-        background-image: url('../img/walkout-sm.jpg');
-    }
-    
-    #header-content h1{
-        font-size:60px;
-    }
-    #header-content h4{
-        font-size:20px;
-    }
-    
-    #about-tag{
-        font-size:18px;
-    }
-    
-    .service-panel{
-        text-align:center;
-    }
-    
-    .hide-card{
-        display:none;
-    }
-    
-    /*align about columns central*/
-    .about-column{
-        text-align:center;
+    #index-wrapper{
+        header{
+            background-image: url('../img/walkout-sm.jpg');
+        }
+        
+        #header-content h1{
+            font-size:60px;
+        }
+        #header-content h4{
+            font-size:20px;
+        }
+        
+        #about-tag{
+            font-size:18px;
+        }
+        
+        .service-panel{
+            text-align:center;
+        }
+        
+        .hide-card{
+            display:none;
+        }
+        
+        /*align about columns central*/
+        .about-column{
+            text-align:center;
+        }
     }
 }
 
 @media screen and (max-width: 766px) and (orientation: landscape) {
-    header{
-        background-image: url('../img/walkout.jpg');
-        background-attachment: unset;
-        background-position: bottom;
+    #index-wrapper{
+        header{
+            background-image: url('../img/walkout.jpg');
+            background-attachment: unset;
+            background-position: bottom;
+        }
     }
 }
 
 /*TABLET*/
 /*screensize*/
 @media screen and (max-width:1050px){
-    .featured-project-title{
-        display:none;
+    #index-wrapper{
+        .featured-project-title{
+            display:none;
+        }
     }
 }
 
@@ -223,10 +229,12 @@ media queries
 
 /*DESKTOP*/
 @media screen and (min-width: 1050px){
-    #header-content h1{
-        font-size:120px;
-    }
-    #header-content h4{
-        font-size:40px;
+    #index-wrapper{
+        #header-content h1{
+            font-size:120px;
+        }
+        #header-content h4{
+            font-size:40px;
+        }
     }
 }

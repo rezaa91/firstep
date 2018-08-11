@@ -1,0 +1,88 @@
+#contact-wrapper{
+
+    /*
+    styling for header
+    */
+    #header{
+        height: 40vh;
+        background-image: url('../img/humber-bridge1.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    #header-text{
+        position:relative;
+        top:30vh;
+        font-family:'raleway',sans-serif;
+    }
+    .header-title{
+        color:rgb(251,253,255);
+    }
+
+    /*
+    styling for contact form
+    */
+    #contact{
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color:white;
+    }
+
+    label{
+        font-weight:bold;
+    }
+
+    #send-btn{
+        background-color:rgb(216,73,81);
+        color:rgb(251,253,255);
+    }
+
+    #form-details{
+        padding:20px;
+    }
+
+    #contact-details{
+        padding:20px;
+        border-left:2px solid rgb(67,87,163);
+        background-color:rgb(251,253,255);
+    }
+
+    .address-header{
+        color:rgb(67,87,163);
+    }
+
+    textarea{
+        resize:none;
+    }
+
+    /*style client side form validation messages*/
+    .error{
+        color:rgb(261,73,81);
+        font-style:italic;
+        font-size:15px;
+        display:inline-block;
+    }
+
+}
+
+/*
+make responsive - media queries
+*/
+@media screen and (max-width: 768px){
+    #contact{
+        min-width:100%;
+    }
+    
+    #contact-details{
+        border-left:none;
+        text-align:Center;
+    }
+    #contact{
+        margin:0;
+    }
+    .form-group{
+        margin-bottom:2px;
+    }
+}
+
+

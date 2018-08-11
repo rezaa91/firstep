@@ -5,8 +5,8 @@ $js = "src/js/index.js";
 $css = "src/css/index.css";
 $modal = true;
 
-require_once 'core/init.php';
-require_once 'includes/handle-modal.php';
+require_once '../core/init.php';
+require_once '../includes/handle-modal.php';
 
 
 
@@ -311,5 +311,5 @@ require_once 'includes/handle-modal.php';
 </div><!--end of wrapper-->
 
 <?php
-require_once('includes/footer.html');
+require_once('../includes/footer.html');
 ?>

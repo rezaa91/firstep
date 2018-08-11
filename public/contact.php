@@ -6,7 +6,7 @@ $css = "src/css/contact.css";
 $js = 'src/js/contact.js';
 $page_title = "contact us";
 
-require_once 'core/init.php';
+require_once '../core/init.php';
 
 
 
@@ -165,5 +165,5 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 
 <?php
-include_once('includes/footer.html');
+include_once('../includes/footer.html');
 ?>

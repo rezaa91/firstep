@@ -6,8 +6,8 @@ $js = 'src/js/about-us.js';
 $page_title = "about us";
 $modal = true;
 
-require_once 'core/init.php';
-require_once 'includes/handle-modal.php';
+require_once '../core/init.php';
+require_once '../includes/handle-modal.php';
 
 ?>
 
@@ -117,5 +117,5 @@ require_once 'includes/handle-modal.php';
 
 
 <?php
-include_once('includes/footer.html');
+include_once('../includes/footer.html');
 ?>
